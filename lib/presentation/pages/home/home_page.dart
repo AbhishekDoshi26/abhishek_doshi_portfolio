@@ -1,6 +1,5 @@
 import 'package:abhishek_doshi_portfolio/presentation/layout/adaptive.dart';
 import 'package:abhishek_doshi_portfolio/presentation/pages/home/sections/about_me_section.dart';
-import 'package:abhishek_doshi_portfolio/presentation/pages/home/sections/awards_section.dart';
 import 'package:abhishek_doshi_portfolio/presentation/pages/home/sections/blog_section.dart';
 import 'package:abhishek_doshi_portfolio/presentation/pages/home/sections/footer_section.dart';
 import 'package:abhishek_doshi_portfolio/presentation/pages/home/sections/header_section/header_section.dart';
@@ -8,6 +7,7 @@ import 'package:abhishek_doshi_portfolio/presentation/pages/home/sections/nav_se
 import 'package:abhishek_doshi_portfolio/presentation/pages/home/sections/nav_section/nav_section_web.dart';
 import 'package:abhishek_doshi_portfolio/presentation/pages/home/sections/skills_section.dart';
 import 'package:abhishek_doshi_portfolio/presentation/pages/home/sections/statistics_section.dart';
+import 'package:abhishek_doshi_portfolio/presentation/pages/home/sections/testimonial_section.dart';
 import 'package:abhishek_doshi_portfolio/presentation/widgets/app_drawer.dart';
 import 'package:abhishek_doshi_portfolio/presentation/widgets/nav_item.dart';
 import 'package:abhishek_doshi_portfolio/presentation/widgets/spaces.dart';
@@ -44,7 +44,7 @@ class _HomePageState extends State<HomePage>
     NavItemData(name: StringConst.HOME, key: GlobalKey(), isSelected: true),
     NavItemData(name: StringConst.ABOUT, key: GlobalKey()),
     NavItemData(name: StringConst.SKILLS, key: GlobalKey()),
-    NavItemData(name: StringConst.AWARDS, key: GlobalKey()),
+    NavItemData(name: StringConst.TESTIMONIALS, key: GlobalKey()),
     NavItemData(name: StringConst.BLOG, key: GlobalKey()),
   ];
 
@@ -186,7 +186,7 @@ class _HomePageState extends State<HomePage>
                         children: [
                           Container(
                             key: navItems[3].key,
-                            child: const AwardsSection(),
+                            child: const TestimonialSection(),
                           ),
                           const SpaceH40(),
                           Container(

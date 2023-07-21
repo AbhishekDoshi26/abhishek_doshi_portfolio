@@ -1,20 +1,37 @@
 import 'package:abhishek_doshi_portfolio/presentation/layout/adaptive.dart';
-import 'package:abhishek_doshi_portfolio/presentation/widgets/bullet_text.dart';
+import 'package:abhishek_doshi_portfolio/presentation/widgets/buttons/animated_nimbus_button.dart';
 import 'package:abhishek_doshi_portfolio/presentation/widgets/content_area.dart';
+import 'package:abhishek_doshi_portfolio/presentation/widgets/nimbus_card.dart';
 import 'package:abhishek_doshi_portfolio/presentation/widgets/nimbus_info_section.dart';
 import 'package:abhishek_doshi_portfolio/presentation/widgets/spaces.dart';
+import 'package:abhishek_doshi_portfolio/utils/functions.dart';
 import 'package:abhishek_doshi_portfolio/values/values.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:visibility_detector/visibility_detector.dart';
 
-class AwardsSection extends StatefulWidget {
-  const AwardsSection({super.key});
-  @override
-  State<AwardsSection> createState() => _AwardsSectionState();
+class TestimonialSectionModel {
+  TestimonialSectionModel({
+    required this.name,
+    required this.image,
+    required this.position,
+    required this.testimonial,
+  });
+
+  final String name;
+  final String image;
+  final String position;
+  final String testimonial;
 }
 
-class _AwardsSectionState extends State<AwardsSection>
+class TestimonialSection extends StatefulWidget {
+  const TestimonialSection({super.key});
+  @override
+  State<TestimonialSection> createState() => _TestimonialSectionState();
+}
+
+class _TestimonialSectionState extends State<TestimonialSection>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   bool text1InView = false;
@@ -51,12 +68,12 @@ class _AwardsSectionState extends State<AwardsSection>
     double contentAreaWidth = responsiveSize(
       context,
       screenWidth,
-      screenWidth * 0.5,
-      md: screenWidth * 0.5,
+      screenWidth,
+      md: screenWidth,
     );
     double contentAreaHeight = screenHeight * 0.9;
     return VisibilityDetector(
-      key: const Key('awards-section'),
+      key: const Key('testimonial-section'),
       onVisibilityChanged: (visibilityInfo) {
         double visiblePercentage = visibilityInfo.visibleFraction * 100;
         if (visiblePercentage > 50) {
@@ -73,18 +90,9 @@ class _AwardsSectionState extends State<AwardsSection>
             double screenWidth = sizingInformation.screenSize.width;
             if (screenWidth <= 1024) {
               return Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  ResponsiveBuilder(
-                    builder: (context, sizingInformation) {
-                      double screenWidth = sizingInformation.screenSize.width;
-                      if (screenWidth <
-                          (const RefinedBreakpoints().tabletSmall)) {
-                        return _buildNimbusInfoSectionSm();
-                      } else {
-                        return _buildNimbusInfoSectionLg();
-                      }
-                    },
-                  ),
+                  _buildNimbusInfoSectionLg(),
                   const SpaceH50(),
                   ResponsiveBuilder(
                     builder: (context, sizingInformation) {
@@ -108,29 +116,25 @@ class _AwardsSectionState extends State<AwardsSection>
                 ],
               );
             } else {
-              return Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
+              return Stack(
                 children: [
+                  Positioned(
+                    right: -screenWidth / 2,
+                    child: _buildImage(
+                      width: contentAreaWidth,
+                      height: contentAreaHeight,
+                    ),
+                  ),
                   ContentArea(
                     width: contentAreaWidth,
                     height: contentAreaHeight,
-                    child: Row(
+                    child: Column(
                       children: [
-                        Expanded(
-                          child: Column(
-                            children: [
-                              const Spacer(),
-                              _buildNimbusInfoSectionLg(),
-                              const Spacer(flex: 2),
-                            ],
-                          ),
-                        ),
+                        const Spacer(),
+                        _buildNimbusInfoSectionLg(),
+                        const Spacer(flex: 2),
                       ],
                     ),
-                  ),
-                  _buildImage(
-                    width: contentAreaWidth,
-                    height: contentAreaHeight,
                   ),
                 ],
               );
@@ -141,37 +145,20 @@ class _AwardsSectionState extends State<AwardsSection>
     );
   }
 
-  Widget _buildNimbusInfoSectionSm() {
-    return NimbusInfoSection2(
-      sectionTitle: StringConst.MY_AWARDS,
-      title1: StringConst.AWARDS_TITLE,
-      hasTitle2: false,
-      body: StringConst.AWARDS_DESC,
-      child: Column(
-        children: [
-          _buildAwards1(),
-          const SpaceH40(),
-          _buildAwards2(),
-          const SpaceH40(),
-        ],
-      ),
-    );
-  }
-
   Widget _buildNimbusInfoSectionLg() {
     return NimbusInfoSection1(
-      sectionTitle: StringConst.MY_AWARDS,
-      title1: StringConst.AWARDS_TITLE,
+      sectionTitle: StringConst.MY_TESTIMONIALS,
+      title1: StringConst.TESTIMONIALS_TITLE,
       hasTitle2: false,
-      body: StringConst.AWARDS_DESC,
-      child: Row(
-        children: [
-          _buildAwards1(),
-          const Spacer(),
-          _buildAwards2(),
-          const Spacer(flex: 4),
-        ],
+      body: StringConst.TEDTIMONIALS_DESC,
+      trailing: AnimatedNimbusButton(
+        title: 'Check out more!',
+        iconData: Icons.arrow_forward_ios,
+        onTap: () {
+          openUrlLink(StringConst.LINKED_IN_URL);
+        },
       ),
+      child: _buildTestimonials(),
     );
   }
 
@@ -218,6 +205,8 @@ class _AwardsSectionState extends State<AwardsSection>
                         turns: _controller,
                         child: Image.asset(
                           ImagePath.kDotsGlobeYeloow,
+                          width: Sizes.WIDTH_150,
+                          height: Sizes.HEIGHT_150,
                           color: AppColors.primaryColor,
                         ),
                       );
@@ -252,42 +241,122 @@ class _AwardsSectionState extends State<AwardsSection>
     );
   }
 
-  Widget _buildAwards1() {
-    TextTheme textTheme = Theme.of(context).textTheme;
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          StringConst.AWARDS_TYPE_TITLE_1,
-          style: textTheme.titleLarge,
+  Widget _buildTestimonials() {
+    return SizedBox(
+      height: responsiveSize(context, 310, 310),
+      width: widthOfScreen(context),
+      child: CarouselSlider(
+        options: CarouselOptions(
+          height: responsiveSize(context, 310, 310),
+          autoPlay: true,
+          viewportFraction: responsiveSize(context, 1, 0.4, md: 0.5),
         ),
-        const SpaceH16(),
-        ..._buildAwards(Data.awards1),
-      ],
+        items: buildCardRow(
+          context: context,
+          data: Data.testimonials,
+          hasAnimation: false,
+          isHorizontal: true,
+          isWrap: true,
+          width: responsiveSize(context, 350, 600, md: 520),
+        ),
+      ),
     );
   }
 
-  Widget _buildAwards2() {
+  List<Widget> buildCardRow({
+    required BuildContext context,
+    required List<TestimonialSectionModel> data,
+    required double width,
+    bool isHorizontal = true,
+    bool isWrap = false,
+    bool hasAnimation = true,
+  }) {
     TextTheme textTheme = Theme.of(context).textTheme;
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          StringConst.AWARDS_TYPE_TITLE_2,
-          style: textTheme.headlineSmall,
-        ),
-        const SpaceH16(),
-        ..._buildAwards(Data.awards1),
-      ],
-    );
-  }
-
-  List<Widget> _buildAwards(List<String> awards) {
     List<Widget> items = [];
-    for (int index = 0; index < awards.length; index++) {
-      items.add(TextWithBullet(text: awards[index]));
-      items.add(const SpaceH16());
+
+    for (int index = 0; index < data.length; index++) {
+      items.add(
+        NimBusCard(
+          width: width,
+          height: responsiveSize(context, 310, 310),
+          hasAnimation: hasAnimation,
+          title: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: SizedBox(
+              width: responsiveSize(context, 250, 550, md: 450),
+              child: Text(
+                data[index].testimonial,
+                style: textTheme.titleMedium?.copyWith(
+                  fontSize: responsiveSize(
+                    context,
+                    Sizes.TEXT_SIZE_12,
+                    Sizes.TEXT_SIZE_14,
+                  ),
+                  overflow: TextOverflow.ellipsis,
+                ),
+                textAlign: TextAlign.justify,
+                maxLines: 10,
+              ),
+            ),
+          ),
+          subtitle: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: CircleAvatar(
+                  backgroundImage: NetworkImage(data[index].image),
+                ),
+              ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: SelectableText(
+                      data[index].name,
+                      style: textTheme.bodyLarge?.copyWith(
+                        fontSize: responsiveSize(
+                          context,
+                          Sizes.TEXT_SIZE_14,
+                          Sizes.TEXT_SIZE_16,
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: responsiveSize(context, 240, 530, md: 450),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: SelectableText(
+                        data[index].position,
+                        style: textTheme.bodyLarge?.copyWith(
+                          fontSize: responsiveSize(
+                            context,
+                            Sizes.TEXT_SIZE_14,
+                            Sizes.TEXT_SIZE_16,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
+      );
+      //run this only on mobile devices and laptops but not on tablets.
+      // We use `Wrap` to make the widgets wrap on the tablet view
+      if (!isWrap) {
+        if (isHorizontal) {
+          items.add(const SpaceW36());
+        } else {
+          items.add(const SpaceH30());
+        }
+      }
     }
+
     return items;
   }
 }

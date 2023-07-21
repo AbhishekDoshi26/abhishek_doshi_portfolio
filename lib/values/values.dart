@@ -1,6 +1,7 @@
 library values;
 
 import 'package:abhishek_doshi_portfolio/presentation/pages/home/sections/statistics_section.dart';
+import 'package:abhishek_doshi_portfolio/presentation/pages/home/sections/testimonial_section.dart';
 import 'package:abhishek_doshi_portfolio/presentation/widgets/blog_card.dart';
 import 'package:abhishek_doshi_portfolio/presentation/widgets/buttons/social_button.dart';
 import 'package:abhishek_doshi_portfolio/presentation/widgets/buttons/social_button_2.dart';

@@ -228,13 +228,6 @@ class _HeaderSectionMobileState extends State<HeaderSectionMobile>
                                   opensUrl: true,
                                   url: StringConst.EMAIL_URL,
                                 ),
-                                // NimBusButtonLink(
-                                //   width: buttonWidth,
-                                //   height: buttonHeight,
-                                //   url: StringConst.EMAIL_URL,
-                                //   buttonColor: AppColors.primaryColor,
-                                //   buttonTitle: StringConst.HIRE_ME_NOW,
-                                // ),
                               ],
                             ),
                             const SpaceH30(),

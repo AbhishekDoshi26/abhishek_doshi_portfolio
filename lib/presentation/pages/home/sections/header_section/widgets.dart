@@ -64,14 +64,6 @@ List<Widget> buildSocialIcons(List<SocialButtonData> socialItems) {
   List<Widget> items = [];
   for (int index = 0; index < socialItems.length; index++) {
     items.add(
-      // InkWell(
-      //   onTap: () => openUrlLink(socialItems[index].url),
-      //   child: Icon(
-      //     socialItems[index].iconData,
-      //     color: AppColors.black,
-      //     size: Sizes.ICON_SIZE_18,
-      //   ),
-      // ),
       NimBusLink(
         url: socialItems[index].url,
         child: Icon(

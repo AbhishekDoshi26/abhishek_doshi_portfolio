@@ -263,8 +263,6 @@ class _HeaderSectionWebState extends State<HeaderSectionWeb>
                                   buttonTitle: StringConst.HIRE_ME_NOW,
                                   opensUrl: true,
                                   url: StringConst.EMAIL_URL,
-                                  // onPressed: () =>
-                                  //     openUrlLink(StringConst.EMAIL_URL),
                                 ),
                               ],
                             ),

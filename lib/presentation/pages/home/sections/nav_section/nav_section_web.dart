@@ -108,7 +108,6 @@ class _NavSectionWebState extends State<NavSectionWeb> {
             NimbusButton(
               buttonTitle: StringConst.CONTACT_ME,
               width: contactBtnWidth,
-              // onPressed: () => openUrlLink(StringConst.EMAIL_URL),
               opensUrl: true,
               url: StringConst.EMAIL_URL,
             ),

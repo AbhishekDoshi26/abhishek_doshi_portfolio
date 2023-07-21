@@ -10,7 +10,7 @@ class StringConst {
   static const String HOME = "Home";
   static const String SERVICES = "Services";
   static const String ABOUT = "About";
-  static const String AWARDS = "Awards";
+  static const String TESTIMONIALS = "Testimonials";
   static const String BLOG = "Blog";
   static const String SKILLS = "Skills";
   static const String CONTACT = "Contacts";
@@ -83,41 +83,39 @@ class StringConst {
   static const String INCREDIBLE_PROJECTS = "Incredible Projects";
   static const String INCREDIBLE_PROJECTS_NUM = "58";
 
-  //Awards & Section
-  static const String MY = "My";
-  static const String CV = "CV";
-  static const String MY_AWARDS = "my awards";
-  static const String AWARDS_TITLE = "Honours & Awards";
-  static const String AWARDS_DESC =
-      "Since 2015 I have been a visionary and a reliable software engineering partner for world-class brands.";
-  static const String AWARDS_TYPE_TITLE_1 = "In Press";
-  static const String AWARDS_TYPE_TITLE_2 = "Awards";
-  static const String AWARDS_1 = "Forbes";
-  static const String AWARDS_2 = "New York Times";
-  static const String AWARDS_3 = "Smashing Magazine";
-  static const String AWARDS_4 = "Entrepreneur";
-  static const String AWARDS_5 = "First Magazine";
-  static const String AWARDS_6 = "The Type Direction Club 60";
-  static const String AWARDS_7 = "ClassiCon-Brochure 2017";
-  static const String AWARDS_8 = "The Good Design Awards 2017";
-  static const String AWARDS_9 = "For Print Only-Under consideration";
-  static const String AWARDS_10 = "CI Magazine 2017";
-
   //Brands Section
   static const String BRANDS_SECTION_TITLE = "Brands I've worked with";
   static const String HIRE_ME = "Hire me";
 
   //Testimonials Section
+  static const String MY = "MY";
+  static const String CV = "CV";
+
   static const String MY_TESTIMONIALS = "my testimonials";
-  static const String TESTIMONIALS_SECTION_TITLE = "Client Testimonials";
-  static const String TESTIMONIALS_1_NAME = "Arnold Wilson";
-  static const String TESTIMONIALS_1_POSITION = "PHP Developer";
+  static const String TESTIMONIALS_TITLE = "Testimonials";
+  static const String TEDTIMONIALS_DESC =
+      "Since 2018 I have been a visionary and a reliable software engineering partner\nfor many startups and individuals. Here are few testimonials.";
+  static const String TESTIMONIALS_1_NAME = "Juan Luna";
+  static const String TESTIMONIALS_1_POSITION = "Sr. Flutter Developer";
   static const String TESTIMONIALS_1 =
-      "Ameli has quickly become an indispensable partner in capturing the innovation in our products in a way that best represents our brand voice. She bring fresh ideas and challenges to the way our industry typically markets products. An integrated marketing campaign supporting a major 2015 product launch exceeded goals by as much as 300%.";
-  static const String TESTIMONIALS_2_NAME = "Ronald Green";
-  static const String TESTIMONIALS_2_POSITION = "UI Designer";
+      "Abhi is an expert Mobile app developer. His technical skills are impressive and come up with multiple solutions to a problem. He has an outstanding network and is a Google Developer Expert. He makes sure all the deadlines should meet the highest standards. He is a hardworking and dedicated person who will complete projects in a given time frame. I really enjoyed working alongside him. Great person and team mate!";
+  static const String TESTIMONIALS_2_NAME = "Akansha Jain";
+  static const String TESTIMONIALS_2_POSITION = "Software Developer - Mokutan";
   static const String TESTIMONIALS_2 =
-      "What a fantastic day it's been at Max Nimbus! Huge shoutout to the team for connecting us all and making this amazing event possible. She bring fresh ideas and challenges to the way our industry typically markets products. This year I brought friends. Come say hi! Development is one of our values & a theme of Max Nimbus talks.";
+      "I had the privilege of being mentored by Mr. Abhishek Doshi in Flutter development, and I wholeheartedly recommend his guidance. He possesses an exceptional depth of knowledge in Flutter and consistently demonstrated a passion for teaching. His patient and clear explanations helped me grasp complex concepts easily, and his practical approach to learning enabled me to apply my skills effectively.\n\nThrough his mentorship, I gained invaluable insights into best practices, coding techniques, and the latest trends in Flutter development. He encouraged me to explore new possibilities and pushed me to overcome challenges. His friendly and approachable demeanor created a comfortable learning environment, fostering open discussions and collaboration.";
+  static const String TESTIMONIALS_3_NAME = "Jared Hasson";
+  static const String TESTIMONIALS_3_POSITION =
+      "Software Engineer - Ostrich Cyber-Risk";
+  static const String TESTIMONIALS_3 =
+      "I am pleased to write this recommendation for Abhishek, who works with our team at Ostrich Cyber-Risk. Abhishek has displayed thorough expertise and knowledge while he's consulted on optimizing our Flutter codebase, helping us to improve its efficiency and readability.\n\nHis understanding of Dart and the Flutter framework plays a critical role in enhancing our web app. Abhishek has a keen eye for spotting potential areas of improvement and was proactive in making suggestions and implementing changes. His efficient problem-solving approach has resulted in streamlined code and improved software performance. Beyond his technical acumen, Abhishek demonstrates a thorough understanding of industry best practices. He is an avid member of the worldwide Flutter community, and as such, his insights are invaluable and have transformed our approach towards Flutter development. His dedication, professionalism, and passion for software development make him an asset to any team. I confidently recommend Abhishek to any organization looking for a committed, insightful, and highly skilled Flutter developer. His contributions have been significant and lasting. Working with him is a pleasure, and I am sure he will bring the same level of dedication and expertise to any team he joins.";
+  static const String TESTIMONIALS_4_NAME = "Muhammad Mateen";
+  static const String TESTIMONIALS_4_POSITION = "Software Engineer";
+  static const String TESTIMONIALS_4 =
+      "Abhi is an expert Mobile app developer. His technical skills are impressive and come up with multiple solutions to a problem. He has an outstanding network and is a Google Developer Expert.\n\nHe makes sure all the deadlines should meet the highest standards. He is a hardworking and dedicated person who will complete projects in a given time frame. I really enjoyed working alongside him.";
+  static const String TESTIMONIALS_5_NAME = "Bhavik Dodia";
+  static const String TESTIMONIALS_5_POSITION = "Software Engineer";
+  static const String TESTIMONIALS_5 =
+      "Abhishek is a great leader and partner to work with. He always motivates others to try new things and grab new opportunities. He is a good developer, mentor, leader and he helps everyone.";
 
   //Blog Section
   static const String MY_BLOG = "my blog";

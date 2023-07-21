@@ -1,3 +1,4 @@
+import 'package:abhishek_doshi_portfolio/utils/functions.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/link.dart';
 
@@ -22,7 +23,7 @@ class NimBusLink extends StatelessWidget {
       target: linkTarget,
       builder: (context, followLink) {
         return InkWell(
-          onTap: () => followLink,
+          onTap: () => openUrlLink(url),
           child: child,
         );
       },

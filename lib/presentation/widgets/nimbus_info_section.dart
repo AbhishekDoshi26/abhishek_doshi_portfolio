@@ -3,6 +3,7 @@ import 'package:abhishek_doshi_portfolio/presentation/widgets/empty.dart';
 import 'package:abhishek_doshi_portfolio/presentation/widgets/spaces.dart';
 import 'package:abhishek_doshi_portfolio/values/values.dart';
 import 'package:flutter/material.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 
 class NimbusInfoSection1 extends StatelessWidget {
   final String sectionTitle;
@@ -19,6 +20,7 @@ class NimbusInfoSection1 extends StatelessWidget {
   final int quarterTurns;
   final double dividerHeight;
   final Widget? child;
+  final Widget? trailing;
 
   const NimbusInfoSection1({
     super.key,
@@ -36,6 +38,7 @@ class NimbusInfoSection1 extends StatelessWidget {
     this.dividerColor = AppColors.grey350,
     this.dividerHeight = Sizes.HEIGHT_40,
     this.child,
+    this.trailing,
   });
 
   @override
@@ -77,10 +80,26 @@ class NimbusInfoSection1 extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  title1,
-                  style: title1Style ?? titleStyle,
+                Row(
+                  children: [
+                    Text(
+                      title1,
+                      style: title1Style ?? titleStyle,
+                    ),
+                    if (trailing != null &&
+                        widthOfScreen(context) >
+                            const RefinedBreakpoints().tabletSmall)
+                      const SizedBox(width: 20),
+                    if (trailing != null &&
+                        widthOfScreen(context) >
+                            const RefinedBreakpoints().tabletSmall)
+                      trailing!,
+                  ],
                 ),
+                if (trailing != null &&
+                    widthOfScreen(context) <
+                        const RefinedBreakpoints().tabletSmall)
+                  trailing!,
                 hasTitle2
                     ? SizedBox(
                         height: responsiveSize(

@@ -138,20 +138,44 @@ class Data {
     ),
   ];
 
-  static List<String> awards1 = [
-    StringConst.AWARDS_1,
-    StringConst.AWARDS_2,
-    StringConst.AWARDS_3,
-    StringConst.AWARDS_4,
-    StringConst.AWARDS_5,
+  static List<TestimonialSectionModel> testimonials = [
+    TestimonialSectionModel(
+      name: StringConst.TESTIMONIALS_1_NAME,
+      position: StringConst.TESTIMONIALS_1_POSITION,
+      testimonial: StringConst.TESTIMONIALS_1,
+      image:
+          "https://media.licdn.com/dms/image/C4D03AQHkiVADDkujMg/profile-displayphoto-shrink_800_800/0/1640115715976?e=1695254400&v=beta&t=rCHRE1ekPudz2VB12j0r1nZ5wf6jbvaZYnHupKLEQpU",
+    ),
+    TestimonialSectionModel(
+      name: StringConst.TESTIMONIALS_2_NAME,
+      position: StringConst.TESTIMONIALS_2_POSITION,
+      testimonial: StringConst.TESTIMONIALS_2,
+      image:
+          "https://media.licdn.com/dms/image/D4D03AQF-gKzz9c-3_w/profile-displayphoto-shrink_800_800/0/1673735338704?e=1695254400&v=beta&t=w_zsbHxAAyxmN_G2ifAWQAbORfUgqXFf0Z8cwi00p4E",
+    ),
+    TestimonialSectionModel(
+      name: StringConst.TESTIMONIALS_3_NAME,
+      position: StringConst.TESTIMONIALS_3_POSITION,
+      testimonial: StringConst.TESTIMONIALS_3,
+      image:
+          "https://media.licdn.com/dms/image/C4E03AQGu3Crb8-eDsA/profile-displayphoto-shrink_800_800/0/1639332512074?e=1695254400&v=beta&t=cxpdwCEx3_HbJzoQ7w9aWVT7GjjLvYnpi6xkZ4_q5w0",
+    ),
+    TestimonialSectionModel(
+      name: StringConst.TESTIMONIALS_4_NAME,
+      position: StringConst.TESTIMONIALS_4_POSITION,
+      testimonial: StringConst.TESTIMONIALS_4,
+      image:
+          "https://media.licdn.com/dms/image/C5103AQFYQq5YimCe4Q/profile-displayphoto-shrink_800_800/0/1531022038075?e=1695254400&v=beta&t=jKxdEAp6wLNaA_Khnq2jQ2MY8B-J9GPOslXsHxFAdNk",
+    ),
+    TestimonialSectionModel(
+      name: StringConst.TESTIMONIALS_5_NAME,
+      position: StringConst.TESTIMONIALS_5_POSITION,
+      testimonial: StringConst.TESTIMONIALS_5,
+      image:
+          "https://media.licdn.com/dms/image/C5103AQGCTusGo7Dmkw/profile-displayphoto-shrink_800_800/0/1581185483397?e=1695254400&v=beta&t=z8-4G99_w0fR0pKObGbkfhg9buAyzMGbpRtg_qH7C7M",
+    ),
   ];
-  static List<String> awards2 = [
-    StringConst.AWARDS_6,
-    StringConst.AWARDS_7,
-    StringConst.AWARDS_8,
-    StringConst.AWARDS_9,
-    StringConst.AWARDS_10,
-  ];
+
   static List<BlogCardData> blogData = [
     BlogCardData(
       category: StringConst.BLOG_CATEGORY_1,
