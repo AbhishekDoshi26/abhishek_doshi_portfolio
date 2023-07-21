@@ -21,7 +21,7 @@ class SkillLevel extends StatefulWidget {
     required this.controller,
     this.skillStyle,
     this.levelStyle,
-    this.skillLevelColor = AppColors.yellow300,
+    this.skillLevelColor = AppColors.blue300,
     this.baseColor = AppColors.grey100,
     this.skillLevelWidth = 100,
     this.baseThickness = 2.0,

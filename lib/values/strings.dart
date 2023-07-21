@@ -10,7 +10,6 @@ class StringConst {
   static const String HOME = "Home";
   static const String SERVICES = "Services";
   static const String ABOUT = "About";
-  static const String PROJECTS = "Projects";
   static const String AWARDS = "Awards";
   static const String BLOG = "Blog";
   static const String SKILLS = "Skills";
@@ -25,20 +24,17 @@ class StringConst {
   static const String INTRO = "Hi! I'm Abhishek Doshi -";
   static const String POSITION = "Flutter Developer";
   static const String ABOUT_DEV =
-      "Google Developer Expert for Dart, Flutter & Firebase, working in Flutter for 5 years so far.";
-  static const String ABOUT_ME_1 =
-      "Google Developer Expert for Dart, Flutter & Firebase.";
-  static const String ABOUT_ME_2 = "Working in Flutter for 5 years so far. ";
+      "Google Developer Expert for Dart, Flutter & Firebase. Working in Flutter and Firebase from past 5 years. With deep experience in Flutter & Firebase, let's give your idea a life. Community Leader & Content Creator.";
   static const String DOWNLOAD_CV = "Download CV";
   static const String EMAIL = "Email";
   static const String DEV_EMAIL_2 = "adoshi26.ad@gmail.com";
   static const String LinkedIn = "LinkedIn";
   static const String LinkedInId = "linkedin.com/in/abhishekdoshi26";
   static const String HIRE_ME_NOW = "Hire Me Now";
-  static const String UI_UX = "UI/UX Designer";
-  static const String UI_UX_DESC = "creative websites for you";
-  static const String PHOTOGRAPHER = "Photographer";
-  static const String PHOTOGRAPHER_DESC = "Awesome photo & video";
+  static const String FLUTTER_DEVELOPER = "Flutter Developer";
+  static const String FLUTTER_DEVELOPER_DESC = "Creative apps for you";
+  static const String COMMUNITY = "Community Leader";
+  static const String COMMUNITY_DESC = "Awesome content creator";
   static const String FREELANCER = "Freelancer";
   static const String FREELANCER_DESC = "You can hire me now";
 
@@ -54,75 +50,38 @@ class StringConst {
   static const String THERE = "There!";
   static const String ABOUT_ME = "about me";
   static const String ABOUT_ME_DESC =
-      "Product Designer and Digital Creative Director working in design field for 13 years so far, specialized in UI/UX, Branding and digital designs. These are the words we live by in everything we do. Every story we tell, every brand we build, and every interaction we create must not only look beautiful. beautifully, too.";
-  static const String ABOUT_ME_DESC_1 =
-      "Product Designer and Digital Creative Director working in design ";
-  static const String ABOUT_ME_DESC_2 =
-      "field for 13 years so far, specialized in UI/UX, Branding and digital";
-  static const String ABOUT_ME_DESC_3 =
-      "designs. These are the words we live by in everything we do. Every";
-  static const String ABOUT_ME_DESC_4 =
-      "story we tell, every brand we build, and every interaction we";
-  static const String ABOUT_ME_DESC_5 =
-      "create must not only look beautiful. beautifully, too.";
-  static const String CREATIVE_DESIGN = "Need Creative Design?";
-  static const String HELP = "I can Help You!";
+      "Flutter Developer and GDE for Dart, Flutter & Firebase working in app development field for 5 years so far, specialized in app and website development with Flutter. With vast and deep experience of Flutter, I curate your app and give it a soul. Let's give your idea a life.";
+  static const String ABOUT_ME_HEADER = "Have an app idea?";
+  static const String HELP = "Let's get it done!";
   static const String FOLLOW_ME_1 = "You can also follow me here:";
-  static const String DRIBBLE = "Dribble";
-  static const String INSTA = "Insta";
 
   //Skills Section
   static const String MY_SKILLS = "my skills";
-  static const String SKILLS_TITLE_1 = "What My Design";
+  static const String SKILLS_TITLE_1 = "What My App Development";
   static const String SKILLS_TITLE_2 = "Skills Include";
   static const String SKILLS_DESC =
-      "These are the words we live by in everything we do. Every story we tell, every brand we build, and every interaction we create must not only look beautiful.";
-  static const String TOOLS_1_NAME = "Photoshop";
-  static const String TOOLS_1_PROFICIENCY = "80%";
-  static const String TOOLS_2_NAME = "Illustrator";
-  static const String TOOLS_2_PROFICIENCY = "90%";
-  static const String TOOLS_3_NAME = "Sketch";
-  static const String TOOLS_3_PROFICIENCY = "70%";
-  static const String SKILLS_1 = "UI/UX Design";
+      "With vast knowledge and experience in Flutter and Firebase, let's give your idea a life.";
+
+  static const String SKILLS_1 = "Flutter";
   static const String SKILLS_1_DESC =
-      "We believe direct collaboration with our clients is essential to bringing unique";
-  static const String SKILLS_2 = "Graphic Design";
+      "Let's make your app live in the world. With 5+ years of experience in Flutter, delivering best apps for you.";
+  static const String SKILLS_2 = "Firebase";
   static const String SKILLS_2_DESC =
-      "We believe direct collaboration with our clients is essential to bringing unique";
-  static const String SKILLS_3 = "Motion Design";
+      "Got no database knowlegde? No worries, Firebase is your friend.";
+  static const String SKILLS_3 = "Team Lead";
   static const String SKILLS_3_DESC =
       "We believe direct collaboration with our clients is essential to bringing unique";
-  static const String SKILLS_4 = "Photo Retouch";
+  static const String SKILLS_4 = "Git & GitHub";
   static const String SKILLS_4_DESC =
-      "We believe direct collaboration with our clients is essential to bringing unique";
+      "Expertise in Git & GitHub helps me to manage code easily.";
 
   //Stats Section
   static const String HAPPY_CLIENTS = "Happy Clients";
-  static const String HAPPY_CLIENTS_NUM = "120";
+  static const String HAPPY_CLIENTS_NUM = "8";
   static const String YEARS_OF_EXPERIENCE = "Years of Experience";
-  static const String YEARS_OF_EXPERIENCE_NUM = "10";
+  static const String YEARS_OF_EXPERIENCE_NUM = "5";
   static const String INCREDIBLE_PROJECTS = "Incredible Projects";
-  static const String INCREDIBLE_PROJECTS_NUM = "230";
-  static const String AWARD_WINNING = "Award Winning";
-  static const String AWARD_WINNING_NUM = "18";
-
-  //Projects Section
-  static const String MEET_MY_PROJECTS = "Meet My Projects";
-  static const String MY_WORKS = "my works";
-  static const String PROJECTS_DESC =
-      "Product Designer and Digital Creative Director working in design field for 13 years so far, specialized in UI/UX, Branding and digital designs. These are the words we live by in everything we do.";
-  static const String ALL_PROJECTS = "All Projects";
-  static const String ALL = "All";
-  static const String BRANDING = "Branding";
-  static const String PACKAGING = "Packaging";
-  static const String PHOTOGRAPHY = "Photography";
-  static const String WEB_DESIGN = "Web Design";
-  static const String PORTFOLIO_1_TITLE = "Urban Experience";
-  static const String PORTFOLIO_2_TITLE = "Graphic Design";
-  static const String PORTFOLIO_3_TITLE = "Launch Product";
-  static const String PORTFOLIO_4_TITLE = "3D Animation";
-  static const String PORTFOLIO_5_TITLE = "Collect Idea";
-  static const String PORTFOLIO_6_TITLE = "Company Branding";
+  static const String INCREDIBLE_PROJECTS_NUM = "58";
 
   //Awards & Section
   static const String MY = "My";

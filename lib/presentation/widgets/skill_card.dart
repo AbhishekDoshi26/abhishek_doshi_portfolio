@@ -8,8 +8,11 @@ class SkillCardData {
   final String description;
   final IconData iconData;
 
-  SkillCardData(
-      {required this.title, required this.iconData, required this.description});
+  SkillCardData({
+    required this.title,
+    required this.iconData,
+    required this.description,
+  });
 }
 
 class SkillCard extends StatefulWidget {

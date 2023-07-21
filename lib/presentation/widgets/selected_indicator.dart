@@ -5,7 +5,7 @@ class SelectedIndicator extends StatelessWidget {
   const SelectedIndicator({
     super.key,
     required this.width,
-    this.indicatorColor = AppColors.primaryBlue,
+    this.indicatorColor = AppColors.primaryColor,
     this.height = Sizes.SIZE_6,
     this.opacity = 0.85,
   });

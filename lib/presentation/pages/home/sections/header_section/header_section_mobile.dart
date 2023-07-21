@@ -8,7 +8,7 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 
 const double bodyTextSizeLg = 16.0;
-const double bodyTextSizeSm = 14.0;
+const double bodyTextSizeSm = 12.0;
 const double socialTextSizeLg = 18.0;
 const double socialTextSizeSm = 14.0;
 const double sidePadding = Sizes.PADDING_16;
@@ -44,7 +44,7 @@ class _HeaderSectionMobileState extends State<HeaderSectionMobile>
   @override
   Widget build(BuildContext context) {
     TextTheme textTheme = Theme.of(context).textTheme;
-    double headerIntroTextSize = Sizes.TEXT_SIZE_24;
+    double headerIntroTextSize = Sizes.TEXT_SIZE_22;
     double screenWidth = widthOfScreen(context) - (sidePadding * 2);
     double contentAreaWidth = screenWidth;
     TextStyle? bodyTextStyle =
@@ -71,15 +71,6 @@ class _HeaderSectionMobileState extends State<HeaderSectionMobile>
               children: [
                 Stack(
                   children: [
-                    // Positioned(
-                    //   left: -(sizeOfBlobSm * 0.7),
-                    //   top: blobOffset,
-                    //   child: Image.asset(
-                    //     ImagePath.BLOB_BLACK,
-                    //     height: sizeOfBlobSm,
-                    //     width: sizeOfBlobSm,
-                    //   ),
-                    // ),
                     Positioned(
                       left: -(sizeOfGoldenGlobe / 3),
                       top: blobOffset + dottedGoldenGlobeOffset,
@@ -89,6 +80,7 @@ class _HeaderSectionMobileState extends State<HeaderSectionMobile>
                           ImagePath.kDotsGlobeYeloow,
                           width: sizeOfGoldenGlobe,
                           height: sizeOfGoldenGlobe,
+                          color: AppColors.primaryColor,
                         ),
                       ),
                     ),
@@ -161,7 +153,7 @@ class _HeaderSectionMobileState extends State<HeaderSectionMobile>
                                     textStyle:
                                         textTheme.displayMedium?.copyWith(
                                       fontSize: headerIntroTextSize,
-                                      color: AppColors.primaryColor,
+                                      color: AppColors.blue300,
                                       height: 1.2,
                                     ),
                                   ),

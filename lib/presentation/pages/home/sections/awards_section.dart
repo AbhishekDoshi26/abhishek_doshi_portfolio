@@ -210,6 +210,7 @@ class _AwardsSectionState extends State<AwardsSection>
                           ImagePath.kDotsGlobeYeloow,
                           width: Sizes.WIDTH_150,
                           height: Sizes.HEIGHT_150,
+                          color: AppColors.primaryColor,
                         ),
                       );
                     } else {
@@ -217,6 +218,7 @@ class _AwardsSectionState extends State<AwardsSection>
                         turns: _controller,
                         child: Image.asset(
                           ImagePath.kDotsGlobeYeloow,
+                          color: AppColors.primaryColor,
                         ),
                       );
                     }

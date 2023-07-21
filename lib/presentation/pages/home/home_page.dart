@@ -6,7 +6,6 @@ import 'package:abhishek_doshi_portfolio/presentation/pages/home/sections/footer
 import 'package:abhishek_doshi_portfolio/presentation/pages/home/sections/header_section/header_section.dart';
 import 'package:abhishek_doshi_portfolio/presentation/pages/home/sections/nav_section/nav_section_mobile.dart';
 import 'package:abhishek_doshi_portfolio/presentation/pages/home/sections/nav_section/nav_section_web.dart';
-import 'package:abhishek_doshi_portfolio/presentation/pages/home/sections/projects_section.dart';
 import 'package:abhishek_doshi_portfolio/presentation/pages/home/sections/skills_section.dart';
 import 'package:abhishek_doshi_portfolio/presentation/pages/home/sections/statistics_section.dart';
 import 'package:abhishek_doshi_portfolio/presentation/widgets/app_drawer.dart';
@@ -45,7 +44,6 @@ class _HomePageState extends State<HomePage>
     NavItemData(name: StringConst.HOME, key: GlobalKey(), isSelected: true),
     NavItemData(name: StringConst.ABOUT, key: GlobalKey()),
     NavItemData(name: StringConst.SKILLS, key: GlobalKey()),
-    NavItemData(name: StringConst.PROJECTS, key: GlobalKey()),
     NavItemData(name: StringConst.AWARDS, key: GlobalKey()),
     NavItemData(name: StringConst.BLOG, key: GlobalKey()),
   ];
@@ -173,11 +171,6 @@ class _HomePageState extends State<HomePage>
                           ),
                           SizedBox(height: spacerHeight),
                           const StatisticsSection(),
-                          SizedBox(height: spacerHeight),
-                          Container(
-                            key: navItems[3].key,
-                            child: const ProjectsSection(),
-                          ),
                         ],
                       ),
                     ],
@@ -192,12 +185,12 @@ class _HomePageState extends State<HomePage>
                       Column(
                         children: [
                           Container(
-                            key: navItems[4].key,
+                            key: navItems[3].key,
                             child: const AwardsSection(),
                           ),
                           const SpaceH40(),
                           Container(
-                            key: navItems[5].key,
+                            key: navItems[4].key,
                             child: const BlogSection(),
                           ),
                           const FooterSection(),

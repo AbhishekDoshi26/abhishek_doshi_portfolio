@@ -35,11 +35,43 @@ class Data {
   ];
   static List<SocialButton2Data> socialData2 = [
     SocialButton2Data(
-      title: StringConst.INSTA,
+      title: '',
+      iconData: FontAwesomeIcons.github,
+      url: StringConst.GITHUB_URL,
+      titleColor: AppColors.blue300,
+      buttonColor: AppColors.blue300,
+      iconColor: AppColors.white,
+    ),
+    SocialButton2Data(
+      title: '',
+      iconData: FontAwesomeIcons.linkedin,
+      url: StringConst.LINKED_IN_URL,
+      titleColor: AppColors.blue300,
+      buttonColor: AppColors.blue300,
+      iconColor: AppColors.white,
+    ),
+    SocialButton2Data(
+      title: '',
+      iconData: FontAwesomeIcons.twitter,
+      url: StringConst.TWITTER_URL,
+      titleColor: AppColors.blue300,
+      buttonColor: AppColors.blue300,
+      iconColor: AppColors.white,
+    ),
+    SocialButton2Data(
+      title: '',
+      iconData: FontAwesomeIcons.medium,
+      url: StringConst.MEDIUM_URL,
+      titleColor: AppColors.blue300,
+      buttonColor: AppColors.blue300,
+      iconColor: AppColors.white,
+    ),
+    SocialButton2Data(
+      title: '',
       iconData: FontAwesomeIcons.instagram,
       url: StringConst.INSTAGRAM_URL,
-      titleColor: AppColors.yellow300,
-      buttonColor: AppColors.yellow300,
+      titleColor: AppColors.blue300,
+      buttonColor: AppColors.blue300,
       iconColor: AppColors.white,
     ),
   ];
@@ -47,7 +79,7 @@ class Data {
   static List<SkillLevelData> skillLevelData = [
     SkillLevelData(
       skill: StringConst.SKILLS_1,
-      level: 80,
+      level: 95,
     ),
     SkillLevelData(
       skill: StringConst.SKILLS_2,
@@ -55,7 +87,7 @@ class Data {
     ),
     SkillLevelData(
       skill: StringConst.SKILLS_3,
-      level: 70,
+      level: 80,
     ),
   ];
 
@@ -63,45 +95,47 @@ class Data {
     SkillCardData(
       title: StringConst.SKILLS_1,
       description: StringConst.SKILLS_1_DESC,
-      iconData: FontAwesomeIcons.compress,
+      iconData: Icons.mobile_friendly,
     ),
     SkillCardData(
-        title: "",
-        description: "",
-        iconData: Icons.pages_outlined), //not being used
+      title: "",
+      description: "",
+      iconData: Icons.pages_outlined,
+    ), //not being used
     SkillCardData(
       title: StringConst.SKILLS_2,
       description: StringConst.SKILLS_2_DESC,
-      iconData: Icons.pages_outlined,
+      iconData: Icons.cloud,
     ),
     SkillCardData(
       title: StringConst.SKILLS_3,
       description: StringConst.SKILLS_3_DESC,
-      iconData: FontAwesomeIcons.paintBrush,
+      iconData: FontAwesomeIcons.teamspeak,
     ),
     SkillCardData(
       title: StringConst.SKILLS_4,
       description: StringConst.SKILLS_4_DESC,
-      iconData: FontAwesomeIcons.recordVinyl,
+      iconData: FontAwesomeIcons.git,
     ),
     SkillCardData(
-        title: "",
-        description: "",
-        iconData: Icons.pages_outlined), //not being used
+      title: "",
+      description: "",
+      iconData: Icons.pages_outlined,
+    ), //not being used
   ];
   static List<StatItemData> statItemsData = [
-    StatItemData(value: 120, subtitle: StringConst.HAPPY_CLIENTS),
-    StatItemData(value: 10, subtitle: StringConst.YEARS_OF_EXPERIENCE),
-    StatItemData(value: 230, subtitle: StringConst.INCREDIBLE_PROJECTS),
-    StatItemData(value: 18, subtitle: StringConst.AWARD_WINNING),
-  ];
-
-  static List<ProjectCategoryData> projectCategories = [
-    ProjectCategoryData(title: StringConst.ALL, number: 6, isSelected: true),
-    ProjectCategoryData(title: StringConst.BRANDING, number: 1),
-    ProjectCategoryData(title: StringConst.PACKAGING, number: 1),
-    ProjectCategoryData(title: StringConst.PHOTOGRAPHER, number: 2),
-    ProjectCategoryData(title: StringConst.WEB_DESIGN, number: 3),
+    StatItemData(
+      value: int.parse(StringConst.HAPPY_CLIENTS_NUM),
+      subtitle: StringConst.HAPPY_CLIENTS,
+    ),
+    StatItemData(
+      value: int.parse(StringConst.YEARS_OF_EXPERIENCE_NUM),
+      subtitle: StringConst.YEARS_OF_EXPERIENCE,
+    ),
+    StatItemData(
+      value: int.parse(StringConst.INCREDIBLE_PROJECTS_NUM),
+      subtitle: StringConst.INCREDIBLE_PROJECTS,
+    ),
   ];
 
   static List<String> awards1 = [
@@ -144,17 +178,17 @@ class Data {
 
   static List<NimBusCardData> nimbusCardData = [
     NimBusCardData(
-      title: StringConst.UI_UX,
-      subtitle: StringConst.UI_UX_DESC,
+      title: StringConst.FLUTTER_DEVELOPER,
+      subtitle: StringConst.FLUTTER_DEVELOPER_DESC,
       leadingIcon: Icons.done,
       trailingIcon: Icons.chevron_right,
     ),
     NimBusCardData(
-      title: StringConst.PHOTOGRAPHER,
-      subtitle: StringConst.PHOTOGRAPHER_DESC,
+      title: StringConst.COMMUNITY,
+      subtitle: StringConst.COMMUNITY_DESC,
       leadingIcon: Icons.done,
       trailingIcon: Icons.chevron_right,
-      circleBgColor: AppColors.yellow100,
+      circleBgColor: AppColors.blue300,
     ),
     NimBusCardData(
       title: StringConst.FREELANCER,
@@ -163,99 +197,6 @@ class Data {
       trailingIcon: Icons.chevron_right,
       leadingIconColor: AppColors.black,
       circleBgColor: AppColors.grey50,
-    ),
-  ];
-
-  static List<ProjectData> allProjects = [
-    ProjectData(
-      title: StringConst.PORTFOLIO_1_TITLE,
-      category: StringConst.PHOTOGRAPHY,
-      projectCoverUrl: ImagePath.kPortfolio1,
-      width: 0.5,
-      mobileHeight: 0.3,
-    ),
-    ProjectData(
-      title: StringConst.PORTFOLIO_2_TITLE,
-      category: StringConst.WEB_DESIGN,
-      projectCoverUrl: ImagePath.kPortfolio2,
-      width: 0.225,
-    ),
-    ProjectData(
-      title: StringConst.PORTFOLIO_3_TITLE,
-      category: StringConst.BRANDING,
-      projectCoverUrl: ImagePath.kPortfolio3,
-      width: 0.225,
-    ),
-    ProjectData(
-      title: StringConst.PORTFOLIO_4_TITLE,
-      category: StringConst.WEB_DESIGN,
-      projectCoverUrl: ImagePath.kPortfolio4,
-      width: 0.2375,
-    ),
-    ProjectData(
-      title: StringConst.PORTFOLIO_5_TITLE,
-      category: StringConst.PACKAGING,
-      projectCoverUrl: ImagePath.kPortfolio5,
-      width: 0.2375,
-    ),
-    ProjectData(
-      title: StringConst.PORTFOLIO_6_TITLE,
-      category: StringConst.PHOTOGRAPHY,
-      projectCoverUrl: ImagePath.kPortfolio6,
-      width: 0.475,
-      mobileHeight: 0.3,
-    ),
-  ];
-  static List<ProjectData> branding = [
-    ProjectData(
-      title: StringConst.PORTFOLIO_3_TITLE,
-      category: StringConst.BRANDING,
-      projectCoverUrl: ImagePath.kPortfolio3,
-      width: 0.225,
-    ),
-  ];
-  static List<ProjectData> packaging = [
-    ProjectData(
-      title: StringConst.PORTFOLIO_5_TITLE,
-      category: StringConst.PACKAGING,
-      projectCoverUrl: ImagePath.kPortfolio5,
-      width: 0.2375,
-    ),
-  ];
-  static List<ProjectData> photograhy = [
-    ProjectData(
-      title: StringConst.PORTFOLIO_1_TITLE,
-      category: StringConst.PHOTOGRAPHY,
-      projectCoverUrl: ImagePath.kPortfolio1,
-      width: 0.5,
-      mobileHeight: 0.3,
-    ),
-    ProjectData(
-      title: StringConst.PORTFOLIO_6_TITLE,
-      category: StringConst.PHOTOGRAPHY,
-      projectCoverUrl: ImagePath.kPortfolio6,
-      width: 0.475,
-      mobileHeight: 0.3,
-    ),
-  ];
-  static List<ProjectData> webDesign = [
-    ProjectData(
-      title: StringConst.PORTFOLIO_2_TITLE,
-      category: StringConst.WEB_DESIGN,
-      projectCoverUrl: ImagePath.kPortfolio2,
-      width: 0.225,
-    ),
-    ProjectData(
-      title: StringConst.PORTFOLIO_4_TITLE,
-      category: StringConst.WEB_DESIGN,
-      projectCoverUrl: ImagePath.kPortfolio4,
-      width: 0.2375,
-    ),
-    ProjectData(
-      title: StringConst.PORTFOLIO_5_TITLE,
-      category: StringConst.PACKAGING,
-      projectCoverUrl: ImagePath.kPortfolio5,
-      width: 0.2375,
     ),
   ];
 }

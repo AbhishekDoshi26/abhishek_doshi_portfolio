@@ -171,7 +171,11 @@ class _AboutMeSectionState extends State<AboutMeSection>
     TextTheme textTheme = Theme.of(context).textTheme;
     double fontSize = responsiveSize(context, 60, 72, md: 64);
     TextStyle? titleStyle = textTheme.bodyLarge?.merge(
-      Styles.customTextStyle3(fontSize: fontSize, height: 1.25),
+      Styles.customTextStyle3(
+        fontSize: fontSize,
+        height: 1.25,
+        color: AppColors.primaryText2,
+      ),
     );
 
     return Stack(
@@ -301,7 +305,7 @@ class _AboutMeSectionState extends State<AboutMeSection>
             children: [
               NimbusInfoSection1(
                 sectionTitle: StringConst.ABOUT_ME,
-                title1: StringConst.CREATIVE_DESIGN,
+                title1: StringConst.ABOUT_ME_HEADER,
                 title2: StringConst.HELP,
                 body: StringConst.ABOUT_ME_DESC,
                 child: Column(
@@ -335,7 +339,7 @@ class _AboutMeSectionState extends State<AboutMeSection>
     TextTheme textTheme = Theme.of(context).textTheme;
     return NimbusInfoSection2(
       sectionTitle: StringConst.ABOUT_ME,
-      title1: StringConst.CREATIVE_DESIGN,
+      title1: StringConst.ABOUT_ME_HEADER,
       title2: StringConst.HELP,
       body: StringConst.ABOUT_ME_DESC,
       child: Column(

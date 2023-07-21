@@ -92,6 +92,7 @@ class _StatisticsSectionState extends State<StatisticsSection>
                         child: Image.asset(
                           ImagePath.kBoxCoverGold,
                           height: 200,
+                          color: AppColors.primaryColor,
                         ),
                       ),
                       Positioned(

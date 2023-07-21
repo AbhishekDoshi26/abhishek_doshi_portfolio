@@ -1,10 +1,10 @@
 part of values;
 
 class AppColors {
-  static const Color primaryColor = Color(0xFFF6C350);
+  static const Color primaryColor = Color.fromARGB(255, 80, 130, 246);
   //Shades of primary color
-  static const Color primary200 = Color(0xFFF3B03D);
-  static const Color primary300 = Color(0xFFDEA137);
+  static const Color primary200 = Color.fromARGB(255, 61, 91, 243);
+  static const Color primary300 = Color.fromARGB(255, 61, 55, 222);
 
   static const Color secondaryColor = Color(0xFF202020);
 
@@ -36,7 +36,6 @@ class AppColors {
   static const Color yellow100 = Color(0xFFF7C259);
   static const Color yellow300 = Color(0xFFF3AF3D);
   static const Color yellow400 = Color(0xFFF4B140);
-  static const Color primaryBlue = Color(0xFF1e80c1);
   static const Color yellow500 = Color(0xFFF4B13E);
   static const Color yellow700 = Color(0xFFDC9F37);
 

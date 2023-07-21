@@ -115,6 +115,7 @@ class _HeaderSectionWebState extends State<HeaderSectionWeb>
                           ImagePath.kDotsGlobeYeloow,
                           width: sizeOfGoldenGlobe,
                           height: sizeOfGoldenGlobe,
+                          color: AppColors.primaryColor,
                         ),
                       ),
                     ),
@@ -186,7 +187,7 @@ class _HeaderSectionWebState extends State<HeaderSectionWeb>
                                     textStyle:
                                         textTheme.displayMedium?.copyWith(
                                       fontSize: headerIntroTextSize,
-                                      color: AppColors.primaryColor,
+                                      color: AppColors.blue300,
                                       height: 1.2,
                                     ),
                                   ),
@@ -196,7 +197,7 @@ class _HeaderSectionWebState extends State<HeaderSectionWeb>
                                 totalRepeatCount: 5,
                               ),
                             ),
-                            const SpaceH16(),
+                            const SpaceH24(),
                             ConstrainedBox(
                               constraints:
                                   BoxConstraints(maxWidth: screenWidth * 0.35),
@@ -205,7 +206,7 @@ class _HeaderSectionWebState extends State<HeaderSectionWeb>
                                 style: bodyTextStyle?.copyWith(height: 1.5),
                               ),
                             ),
-                            const SpaceH30(),
+                            const SpaceH80(),
                             Wrap(
                               // mainAxisSize: MainAxisSize.min,
                               children: [
@@ -220,6 +221,8 @@ class _HeaderSectionWebState extends State<HeaderSectionWeb>
                                     SelectableText(
                                       StringConst.DEV_EMAIL_2,
                                       style: bodyTextStyle,
+                                      onTap: () =>
+                                          openUrlLink(StringConst.EMAIL_URL),
                                     ),
                                   ],
                                 ),
@@ -232,14 +235,11 @@ class _HeaderSectionWebState extends State<HeaderSectionWeb>
                                       style: socialTitleStyle,
                                     ),
                                     const SpaceH8(),
-                                    InkWell(
-                                      onTap: () {
-                                        openUrlLink(StringConst.LINKED_IN_URL);
-                                      },
-                                      child: SelectableText(
-                                        StringConst.LinkedInId,
-                                        style: bodyTextStyle,
-                                      ),
+                                    SelectableText(
+                                      StringConst.LinkedInId,
+                                      style: bodyTextStyle,
+                                      onTap: () => openUrlLink(
+                                          StringConst.LINKED_IN_URL),
                                     ),
                                   ],
                                 ),
