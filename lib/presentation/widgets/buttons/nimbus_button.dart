@@ -1,4 +1,5 @@
 import 'package:abhishek_doshi_portfolio/presentation/layout/adaptive.dart';
+import 'package:abhishek_doshi_portfolio/utils/functions.dart';
 import 'package:abhishek_doshi_portfolio/values/values.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/link.dart';
@@ -68,7 +69,9 @@ class NimbusButton extends StatelessWidget {
           target: linkTarget,
           builder: (context, followLink) {
             return GestureDetector(
-              onTap: followLink,
+              onTap: () {
+                openUrlLink(url);
+              },
               child: Text(
                 buttonTitle,
                 style: titleStyle ??

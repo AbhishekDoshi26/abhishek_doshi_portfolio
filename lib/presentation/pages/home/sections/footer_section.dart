@@ -1,8 +1,8 @@
 import 'package:abhishek_doshi_portfolio/presentation/layout/adaptive.dart';
-import 'package:abhishek_doshi_portfolio/presentation/widgets/buttons/nimbus_button.dart';
 import 'package:abhishek_doshi_portfolio/presentation/widgets/buttons/nimbus_button_link.dart';
 import 'package:abhishek_doshi_portfolio/presentation/widgets/content_area.dart';
 import 'package:abhishek_doshi_portfolio/presentation/widgets/spaces.dart';
+import 'package:abhishek_doshi_portfolio/utils/functions.dart';
 import 'package:abhishek_doshi_portfolio/values/values.dart';
 import 'package:feather_icons/feather_icons.dart';
 import 'package:flutter/material.dart';
@@ -14,16 +14,19 @@ List<FooterItem> footerItems = [
     title: "${StringConst.PHONE_ME}:",
     subtitle: StringConst.PHONE_NUMBER,
     iconData: FeatherIcons.phone,
+    url: StringConst.PHONE_NUMBER_URL,
   ),
   const FooterItem(
     title: "${StringConst.MAIL_ME}:",
     subtitle: StringConst.DEV_EMAIL_2,
     iconData: FontAwesomeIcons.paperPlane,
+    url: StringConst.EMAIL_URL,
   ),
   const FooterItem(
     title: "${StringConst.FOLLOW_ME_2}:",
     subtitle: StringConst.LinkedInId,
-    iconData: FontAwesomeIcons.behance,
+    iconData: FontAwesomeIcons.linkedinIn,
+    url: StringConst.LINKED_IN_URL,
   ),
 ];
 
@@ -73,30 +76,52 @@ class _FooterSectionState extends State<FooterSection> {
               }
             },
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(StringConst.MADE_IN_GHANA, style: footerTextStyle),
-              const SpaceW4(),
-              ClipRRect(
-                borderRadius: const BorderRadius.all(Radius.circular(20)),
-                child: Image.asset(
-                  ImagePath.kGhanaFlag,
-                  width: Sizes.WIDTH_16,
-                  height: Sizes.HEIGHT_16,
-                  fit: BoxFit.cover,
+          const SpaceH20(),
+          Text(
+            StringConst.RIGHTS_RESERVED,
+            style: footerTextStyle,
+          ),
+          Center(
+            child: InkWell(
+              onTap: () => openUrlLink(StringConst.LINKED_IN_URL),
+              child: RichText(
+                text: TextSpan(
+                  text: "${StringConst.BUILT_BY} ",
+                  style: footerTextStyle,
+                  children: [
+                    TextSpan(
+                      text: StringConst.ABHISHEK_DOSHI,
+                      style: footerTextStyle?.copyWith(
+                        decoration: TextDecoration.underline,
+                        fontWeight: FontWeight.w900,
+                        color: AppColors.black,
+                      ),
+                    ),
+                  ],
                 ),
               ),
-              const SpaceW4(),
-              Text(StringConst.WITH_LOVE, style: footerTextStyle),
-              const SpaceW4(),
-              const Icon(
-                FontAwesomeIcons.solidHeart,
-                color: AppColors.red,
-                size: Sizes.ICON_SIZE_12,
-              ),
-            ],
+            ),
+            //  NimBusLink(
+            //   url: StringConst.DAVID_LEGEND_URL,
+            //   child: RichText(
+            //     text: TextSpan(
+            //       text: StringConst.BUILT_BY + " ",
+            //       style: footerTextStyle,
+            //       children: [
+            //         TextSpan(
+            //           text: StringConst.DAVID_COBBINA + ". ",
+            //           style: footerTextStyle?.copyWith(
+            //             decoration: TextDecoration.underline,
+            //             fontWeight: FontWeight.w900,
+            //             color: AppColors.black,
+            //           ),
+            //         ),
+            //       ],
+            //     ),
+            //   ),
+            // ),
           ),
+          const SpaceH4(),
           const SpaceH20(),
         ],
       ),
@@ -113,6 +138,7 @@ class _FooterSectionState extends State<FooterSection> {
           title: data[index].title,
           subtitle: data[index].subtitle,
           iconData: data[index].iconData,
+          url: data[index].url,
         ),
       );
       if (index < data.length - 1) {
@@ -148,9 +174,8 @@ class _FooterSectionState extends State<FooterSection> {
               left: -(height * 0.15),
               child: Image.asset(
                 ImagePath.kBoxCoverGold,
-                // width: width * 0.6 ,
                 height: height * 0.5,
-                // fit: BoxFit.fill,
+                color: AppColors.primaryColor,
               ),
             ),
             Positioned(
@@ -175,10 +200,10 @@ class _FooterSectionState extends State<FooterSection> {
                   const SpaceH60(),
                   ..._buildFooterItems(footerItems),
                   const SpaceH60(),
-                  NimbusButton(
+                  const NimBusButtonLink(
+                    url: StringConst.EMAIL_URL,
                     buttonTitle: StringConst.HIRE_ME,
                     buttonColor: AppColors.primaryColor,
-                    onPressed: () {},
                   ),
                   const SpaceH80(),
                 ],
@@ -213,9 +238,8 @@ class _FooterSectionState extends State<FooterSection> {
               left: -(height * 0.15),
               child: Image.asset(
                 ImagePath.kBoxCoverGold,
-                // width: width ,
                 height: height * 0.5,
-                // fit: BoxFit.fill,
+                color: AppColors.primaryColor,
               ),
             ),
             Positioned(
@@ -267,11 +291,13 @@ class FooterItem extends StatelessWidget {
     required this.iconData,
     required this.title,
     required this.subtitle,
+    required this.url,
   });
 
   final String title;
   final String subtitle;
   final IconData iconData;
+  final String url;
 
   @override
   Widget build(BuildContext context) {
@@ -291,10 +317,13 @@ class FooterItem extends StatelessWidget {
           ),
         ),
         const SpaceH8(),
-        Text(
-          subtitle,
-          style: textTheme.bodyLarge?.copyWith(
-            color: AppColors.grey250,
+        InkWell(
+          onTap: () => openUrlLink(url),
+          child: Text(
+            subtitle,
+            style: textTheme.bodyLarge?.copyWith(
+              color: AppColors.grey250,
+            ),
           ),
         ),
       ],

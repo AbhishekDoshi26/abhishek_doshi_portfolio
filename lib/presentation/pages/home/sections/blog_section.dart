@@ -4,9 +4,9 @@ import 'package:abhishek_doshi_portfolio/presentation/widgets/buttons/nimbus_but
 import 'package:abhishek_doshi_portfolio/presentation/widgets/content_area.dart';
 import 'package:abhishek_doshi_portfolio/presentation/widgets/nimbus_info_section.dart';
 import 'package:abhishek_doshi_portfolio/presentation/widgets/spaces.dart';
+import 'package:abhishek_doshi_portfolio/utils/functions.dart';
 import 'package:abhishek_doshi_portfolio/values/values.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
@@ -77,7 +77,9 @@ class _BlogSectionState extends State<BlogSection> {
                         child: NimbusButton(
                           buttonTitle: StringConst.BLOG_VIEW_ALL,
                           buttonColor: AppColors.primaryColor,
-                          onPressed: () {},
+                          onPressed: () {
+                            openUrlLink(StringConst.MEDIUM_URL);
+                          },
                         ),
                       ),
                     ],
@@ -102,7 +104,9 @@ class _BlogSectionState extends State<BlogSection> {
                       NimbusButton(
                         buttonTitle: StringConst.BLOG_VIEW_ALL,
                         buttonColor: AppColors.primaryColor,
-                        onPressed: () {},
+                        onPressed: () {
+                          openUrlLink(StringConst.MEDIUM_URL);
+                        },
                       ),
                     ],
                   ),
@@ -174,11 +178,6 @@ class _BlogSectionState extends State<BlogSection> {
                             ),
                           ),
                         ),
-                        _buildDotsIndicator(
-                          pageLength: blogLength,
-                          currentIndex: currentPageIndex,
-                        ),
-                        const SpaceH100(),
                       ],
                     );
                   } else {
@@ -255,42 +254,5 @@ class _BlogSectionState extends State<BlogSection> {
       );
     }
     return items;
-  }
-
-  Widget _buildDotsIndicator({
-    required int pageLength,
-    required int currentIndex,
-  }) {
-    return DotsIndicator(
-      dotsCount: pageLength,
-      position: currentIndex.toDouble(),
-      onTap: (index) {
-        _moveToNextCarousel(index.toInt());
-      },
-      decorator: const DotsDecorator(
-        color: AppColors.yellow10,
-        activeColor: AppColors.yellow400,
-        size: Size(Sizes.SIZE_6, Sizes.SIZE_6),
-        activeSize: Size(Sizes.SIZE_24, Sizes.SIZE_6),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.all(
-            Radius.circular(Sizes.RADIUS_8),
-          ),
-        ),
-        activeShape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.all(
-            Radius.circular(Sizes.RADIUS_8),
-          ),
-        ),
-        spacing: EdgeInsets.symmetric(horizontal: Sizes.SIZE_4),
-      ),
-    );
-  }
-
-  _moveToNextCarousel(int index) {
-    setState(() {
-      currentPageIndex = index;
-      _carouselController.animateToPage(index);
-    });
   }
 }

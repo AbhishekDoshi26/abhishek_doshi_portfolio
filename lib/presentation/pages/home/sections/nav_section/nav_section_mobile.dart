@@ -15,32 +15,44 @@ class NavSectionMobile extends StatelessWidget {
       decoration: const BoxDecoration(
         color: AppColors.black100,
       ),
-      child: Row(
+      child: Stack(
+        alignment: Alignment.center,
         children: [
-          const SpaceW30(),
-          IconButton(
-            icon: const Icon(
-              FeatherIcons.menu,
-              color: AppColors.white,
-              size: Sizes.ICON_SIZE_26,
-            ),
-            onPressed: () {
-              if (scaffoldKey.currentState!.isEndDrawerOpen) {
-                scaffoldKey.currentState?.openEndDrawer();
-              } else {
-                scaffoldKey.currentState?.openDrawer();
-              }
-            },
-          ),
-          const Spacer(),
-          InkWell(
-            onTap: () {},
+          Positioned(
+            right: -100,
             child: Image.asset(
-              ImagePath.kLogoLight,
-              height: Sizes.HEIGHT_52,
+              ImagePath.kBlobFemurAsh,
+              color: AppColors.primaryColor,
             ),
           ),
-          const Spacer(),
+          Row(
+            children: [
+              const SpaceW30(),
+              IconButton(
+                icon: const Icon(
+                  FeatherIcons.menu,
+                  color: AppColors.white,
+                  size: Sizes.ICON_SIZE_26,
+                ),
+                onPressed: () {
+                  if (scaffoldKey.currentState!.isEndDrawerOpen) {
+                    scaffoldKey.currentState?.openEndDrawer();
+                  } else {
+                    scaffoldKey.currentState?.openDrawer();
+                  }
+                },
+              ),
+              const Spacer(),
+              InkWell(
+                onTap: () {},
+                child: Image.asset(
+                  ImagePath.kLogoLight,
+                  height: Sizes.HEIGHT_20,
+                ),
+              ),
+              const SpaceW20(),
+            ],
+          ),
         ],
       ),
     );

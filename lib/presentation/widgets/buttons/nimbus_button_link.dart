@@ -1,3 +1,4 @@
+import 'package:abhishek_doshi_portfolio/utils/functions.dart';
 import 'package:abhishek_doshi_portfolio/values/values.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/link.dart';
@@ -36,7 +37,9 @@ class NimBusButtonLink extends StatelessWidget {
           height: height,
           buttonTitle: buttonTitle,
           buttonColor: buttonColor,
-          onPressed: () => followLink,
+          onPressed: () {
+            openUrlLink(url);
+          },
         );
       },
     );

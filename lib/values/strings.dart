@@ -119,36 +119,38 @@ class StringConst {
 
   //Blog Section
   static const String MY_BLOG = "my blog";
-  static const String BLOG_SECTION_TITLE_1 = "Read My Own";
-  static const String BLOG_SECTION_TITLE_2 = "Blog. Be Trendy";
+  static const String BLOG_SECTION_TITLE_1 = "Some Recent Blogs";
+  static const String BLOG_SECTION_TITLE_2 = "That You Might Like!";
   static const String BLOG_DESC =
-      "We met years ago at an advertising agency where we learned a ton of dos and some don'ts. There were project deadlines, happy hours, client proposals and a few sparks flying.";
+      "Writing Blogs is a way of sharing knowledge and experience with the world.";
   static const String BLOG_VIEW_ALL = "View All";
-  static const String BLOG_CATEGORY_1 = "inspiration";
-  static const String BLOG_CATEGORY_2 = "design";
-  static const String BLOG_CATEGORY_3 = "creative";
-  static const String BLOG_DATE = "February 4, 2020";
-  static const String BLOG_TITLE_1 = "How Much Does a Website Cost to Build?";
-  static const String BLOG_TITLE_2 = "10 Tips How Create Best Packaging Design";
-  static const String BLOG_TITLE_3 = "How Get Your Visitors Love Your Brand";
+
+  static const String BLOG_CATEGORY_1 = "flutter";
+  static const String BLOG_CATEGORY_2 = "firebase";
+
+  static const String BLOG_TITLE_1 = "BLoC — The Magic of Single State Class";
+  static const String BLOG_DATE_1 = "July 2, 2023";
+
+  static const String BLOG_TITLE_2 = "Records & Patterns — Dart | Flutter";
+  static const String BLOG_DATE_2 = "February 22, 2023";
+
+  static const String BLOG_TITLE_3 = "Firebase App Distribution — Flutter";
+  static const String BLOG_DATE_3 = "February 2, 2023";
+
   static const String READ_MORE = "Read More";
   static const String BLOGGING = "Blogging";
 
   //Footer Section
   static const String LETS_TALK = "Let's Talk!";
   static const String PHONE_ME = "Phone Me";
-  static const String PHONE_NUMBER = "+1 800 123 456 789";
+  static const String PHONE_NUMBER = "+917818044311";
+  static const String PHONE_NUMBER_URL = "tel:$PHONE_NUMBER";
   static const String MAIL_ME = "Mail Me";
   static const String FOLLOW_ME_2 = "Follow Me";
-  static const String FOLLOW_ME_2_URL = "behance.net/nimbus2000";
-  static const String RIGHTS_RESERVED = "© 2021 All rights reserved";
+
+  static const String RIGHTS_RESERVED = "© 2023 All rights reserved";
   static const String BUILT_BY = "Built with Flutter by";
-  static const String DAVID_COBBINA = "David Cobbina";
-  static const String DESIGNED_BY = "Designed by";
-  static const String WEB_GENIUS_LAB = "WebGeniusLab";
-  static const String MADE_IN_GHANA = "Made in";
-  static const String WITH_LOVE = "with";
-  static const String FIND_ME = "Find me on..";
+  static const String ABHISHEK_DOSHI = "Abhishek Doshi";
 
   //URL Links
   static const String LINKED_IN_URL =

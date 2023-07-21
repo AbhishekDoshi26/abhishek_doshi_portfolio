@@ -91,30 +91,22 @@ class _BlogCardState extends State<BlogCard> {
                   borderRadius: const BorderRadius.all(
                     Radius.circular(Sizes.RADIUS_16),
                   ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      MouseRegion(
-                        onEnter: (e) => _onImageHover(true),
-                        onExit: (e) => _onImageHover(false),
-                        child: AnimatedOpacity(
-                          opacity: _isHoveringOnImage ? 1.0 : 0.85,
-                          duration: const Duration(milliseconds: 300),
-                          child: ClipRRect(
-                            borderRadius: const BorderRadius.all(
-                              Radius.circular(Sizes.RADIUS_16),
-                            ),
-                            child: Image.asset(
-                              widget.imageUrl,
-                              height: heightOfImage(),
-                              width: widthOfImage(),
-                              fit: BoxFit.fitHeight,
-                            ),
-                          ),
+                  child: MouseRegion(
+                    onEnter: (e) => _onImageHover(true),
+                    onExit: (e) => _onImageHover(false),
+                    child: AnimatedOpacity(
+                      opacity: _isHoveringOnImage ? 1.0 : 0.85,
+                      duration: const Duration(milliseconds: 300),
+                      child: ClipRRect(
+                        borderRadius: const BorderRadius.all(
+                          Radius.circular(Sizes.RADIUS_16),
+                        ),
+                        child: Image.network(
+                          widget.imageUrl,
+                          fit: BoxFit.cover,
                         ),
                       ),
-                    ],
+                    ),
                   ),
                 ),
               ),
