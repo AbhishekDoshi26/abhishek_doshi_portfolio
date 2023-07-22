@@ -183,6 +183,7 @@ class Data {
       date: StringConst.BLOG_DATE_1,
       buttonText: StringConst.READ_MORE,
       imageUrl: ImagePath.kBlog01,
+      url: StringConst.BLOG_URL_1,
     ),
     BlogCardData(
       category: StringConst.BLOG_CATEGORY_1,
@@ -190,6 +191,7 @@ class Data {
       date: StringConst.BLOG_DATE_2,
       buttonText: StringConst.READ_MORE,
       imageUrl: ImagePath.kBlog02,
+      url: StringConst.BLOG_URL_2,
     ),
     BlogCardData(
       category: StringConst.BLOG_CATEGORY_2,
@@ -197,24 +199,25 @@ class Data {
       date: StringConst.BLOG_DATE_3,
       buttonText: StringConst.READ_MORE,
       imageUrl: ImagePath.kBlog03,
+      url: StringConst.BLOG_URL_3,
     ),
   ];
 
-  static List<NimBusCardData> nimbusCardData = [
-    NimBusCardData(
+  static List<CardData> homeCardData = [
+    CardData(
       title: StringConst.FLUTTER_DEVELOPER,
       subtitle: StringConst.FLUTTER_DEVELOPER_DESC,
       leadingIcon: Icons.done,
       trailingIcon: Icons.chevron_right,
     ),
-    NimBusCardData(
+    CardData(
       title: StringConst.COMMUNITY,
       subtitle: StringConst.COMMUNITY_DESC,
       leadingIcon: Icons.done,
       trailingIcon: Icons.chevron_right,
       circleBgColor: AppColors.blue300,
     ),
-    NimBusCardData(
+    CardData(
       title: StringConst.FREELANCER,
       subtitle: StringConst.FREELANCER_DESC,
       leadingIcon: Icons.done,
@@ -222,5 +225,34 @@ class Data {
       leadingIconColor: AppColors.black,
       circleBgColor: AppColors.grey50,
     ),
+  ];
+
+  static List<FooterItem> footerItems = [
+    const FooterItem(
+      title: "${StringConst.PHONE_ME}:",
+      subtitle: StringConst.PHONE_NUMBER,
+      iconData: FeatherIcons.phone,
+      url: StringConst.PHONE_NUMBER_URL,
+    ),
+    const FooterItem(
+      title: "${StringConst.MAIL_ME}:",
+      subtitle: StringConst.DEV_EMAIL_2,
+      iconData: FontAwesomeIcons.paperPlane,
+      url: StringConst.EMAIL_URL,
+    ),
+    const FooterItem(
+      title: "${StringConst.FOLLOW_ME_2}:",
+      subtitle: StringConst.LinkedInId,
+      iconData: FontAwesomeIcons.linkedinIn,
+      url: StringConst.LINKED_IN_URL,
+    ),
+  ];
+
+  static List<NavItemData> navItems = [
+    NavItemData(name: StringConst.HOME, key: GlobalKey(), isSelected: true),
+    NavItemData(name: StringConst.ABOUT, key: GlobalKey()),
+    NavItemData(name: StringConst.SKILLS, key: GlobalKey()),
+    NavItemData(name: StringConst.TESTIMONIALS, key: GlobalKey()),
+    NavItemData(name: StringConst.BLOG, key: GlobalKey()),
   ];
 }

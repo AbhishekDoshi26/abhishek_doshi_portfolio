@@ -1,4 +1,4 @@
-import 'package:abhishek_doshi_portfolio/presentation/routes/router.gr.dart';
+import 'package:abhishek_doshi_portfolio/routes/router.gr.dart';
 import 'package:abhishek_doshi_portfolio/values/values.dart';
 import 'package:flutter/material.dart';
 import 'package:layout/layout.dart';
@@ -6,13 +6,13 @@ import 'package:layout/layout.dart';
 import 'app_theme.dart';
 
 void main() {
-  runApp(Nimbus());
+  runApp(MyApp());
 }
 
-class Nimbus extends StatelessWidget {
+class MyApp extends StatelessWidget {
   final _appRouter = AppRouter();
 
-  Nimbus({super.key});
+  MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
