@@ -186,6 +186,9 @@ class _HeaderSectionMobileState extends State<HeaderSectionMobile>
                                     SelectableText(
                                       StringConst.DEV_EMAIL_2,
                                       style: bodyTextStyle,
+                                      onTap: () {
+                                        openUrlLink(StringConst.EMAIL_URL);
+                                      }
                                     ),
                                   ],
                                 ),
@@ -201,6 +204,9 @@ class _HeaderSectionMobileState extends State<HeaderSectionMobile>
                                     SelectableText(
                                       StringConst.LinkedInId,
                                       style: bodyTextStyle,
+                                      onTap: () {
+                                        openUrlLink(StringConst.LINKED_IN_URL);
+                                      },
                                     ),
                                   ],
                                 ),

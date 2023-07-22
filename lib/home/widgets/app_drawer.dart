@@ -158,20 +158,23 @@ class _AppDrawerState extends State<AppDrawer> {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            RichText(
-              text: TextSpan(
-                text: "${StringConst.BUILT_BY} ",
-                style: footerTextStyle,
-                children: [
-                  TextSpan(
-                    text: StringConst.ABHISHEK_DOSHI,
-                    style: footerTextStyle?.copyWith(
-                      decoration: TextDecoration.underline,
-                      fontWeight: FontWeight.w900,
-                      color: AppColors.white,
+            InkWell(
+              onTap: () => openUrlLink(StringConst.LINKED_IN_URL),
+              child: RichText(
+                text: TextSpan(
+                  text: "${StringConst.BUILT_BY} ",
+                  style: footerTextStyle,
+                  children: [
+                    TextSpan(
+                      text: StringConst.ABHISHEK_DOSHI,
+                      style: footerTextStyle?.copyWith(
+                        decoration: TextDecoration.underline,
+                        fontWeight: FontWeight.w900,
+                        color: AppColors.white,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ],
