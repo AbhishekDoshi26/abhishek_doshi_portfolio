@@ -1,7 +1,6 @@
 import 'package:abhishek_doshi_portfolio/utils/utils.dart';
 import 'package:abhishek_doshi_portfolio/values/values.dart';
 import 'package:abhishek_doshi_portfolio/widgets/widgets.dart';
-import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 
 import '../../nav_section/models/nav_item.dart';
@@ -144,7 +143,7 @@ class _AppDrawerState extends State<AppDrawer> {
   }
 
   _closeDrawer() {
-    context.router.pop();
+    Navigator.of(context).pop();
   }
 
   Widget _buildFooterText() {

@@ -1,28 +1,28 @@
-import 'package:abhishek_doshi_portfolio/routes/router.gr.dart';
+import 'package:abhishek_doshi_portfolio/home/home.dart';
 import 'package:abhishek_doshi_portfolio/values/values.dart';
 import 'package:flutter/material.dart';
 import 'package:layout/layout.dart';
+import 'package:url_strategy/url_strategy.dart';
 
 import 'app_theme.dart';
 
 void main() {
-  runApp(MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
+  setPathUrlStrategy();
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  final _appRouter = AppRouter();
-
-  MyApp({super.key});
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Layout(
-      child: MaterialApp.router(
+      child: MaterialApp(
         title: StringConst.APP_NAME,
         theme: AppTheme.lightThemeData,
         debugShowCheckedModeBanner: false,
-        routerDelegate: _appRouter.delegate(),
-        routeInformationParser: _appRouter.defaultRouteParser(),
+        home: const HomePage(),
       ),
     );
   }
