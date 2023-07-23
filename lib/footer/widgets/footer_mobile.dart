@@ -57,7 +57,9 @@ class FooterMobile extends StatelessWidget {
                         ?.copyWith(color: AppColors.white),
                   ),
                   const SpaceH60(),
-                  ...FooterItemsContent.buildFooterItems(Data.footerItems),
+                  FooterItemContent(
+                    data: Data.footerItems,
+                  ),
                   const SpaceH60(),
                   const PortfolioLinkButton(
                     url: StringConst.EMAIL_URL,

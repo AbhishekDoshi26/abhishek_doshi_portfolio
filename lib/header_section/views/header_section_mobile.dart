@@ -183,13 +183,10 @@ class _HeaderSectionMobileState extends State<HeaderSectionMobile>
                                       style: socialTitleStyle,
                                     ),
                                     const SpaceH8(),
-                                    SelectableText(
-                                      StringConst.DEV_EMAIL_2,
-                                      style: bodyTextStyle,
-                                      onTap: () {
-                                        openUrlLink(StringConst.EMAIL_URL);
-                                      }
-                                    ),
+                                    SelectableText(StringConst.DEV_EMAIL_2,
+                                        style: bodyTextStyle, onTap: () {
+                                      openUrlLink(StringConst.EMAIL_URL);
+                                    }),
                                   ],
                                 ),
                                 const SpaceW16(),
@@ -197,12 +194,12 @@ class _HeaderSectionMobileState extends State<HeaderSectionMobile>
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     SelectableText(
-                                      "${StringConst.LinkedIn}:",
+                                      "${StringConst.LINKEDIN}:",
                                       style: socialTitleStyle,
                                     ),
                                     const SpaceH8(),
                                     SelectableText(
-                                      StringConst.LinkedInId,
+                                      StringConst.LINKEDIN_URL_SHORT,
                                       style: bodyTextStyle,
                                       onTap: () {
                                         openUrlLink(StringConst.LINKED_IN_URL);

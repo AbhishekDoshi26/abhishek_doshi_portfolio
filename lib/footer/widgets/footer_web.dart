@@ -57,16 +57,9 @@ class FooterWeb extends StatelessWidget {
                       textTheme.displaySmall?.copyWith(color: AppColors.white),
                 ),
                 const Spacer(),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const Spacer(flex: 3),
-                    ...FooterItemsContent.buildFooterItems(
-                      Data.footerItems,
-                      isHorizontal: true,
-                    ),
-                    const Spacer(flex: 3),
-                  ],
+                FooterItemContent(
+                  data: Data.footerItems,
+                  isHorizontal: true,
                 ),
                 const Spacer(),
                 const PortfolioLinkButton(

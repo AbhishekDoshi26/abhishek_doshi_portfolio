@@ -73,10 +73,8 @@ class CardRow {
               )),
             ),
           ),
-          trailing: Icon(
-            Icons.chevron_right,
-            size: trailingIconSize,
-            color: data[index].trailingIconColor,
+          trailing: SizedBox(
+            width: trailingIconSize,
           ),
         ),
       );

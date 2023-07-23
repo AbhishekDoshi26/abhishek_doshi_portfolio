@@ -110,17 +110,22 @@ class _SocialButton2State extends State<SocialButton2>
               height: widget.buttonHeight,
               duration: const Duration(milliseconds: 400),
               curve: Curves.easeOut,
+              alignment: Alignment.center,
               decoration: BoxDecoration(
-                  color: _isHovering
-                      ? widget.hoverButtonColor
-                      : widget.buttonColor,
-                  borderRadius: const BorderRadius.all(Radius.circular(4))),
-              child: MaterialButton(
-                onPressed: widget.onPressed,
-                child: Icon(
-                  widget.iconData,
-                  size: widget.iconSize,
-                  color: _isHovering ? widget.buttonColor : widget.iconColor,
+                color:
+                    _isHovering ? widget.hoverButtonColor : widget.buttonColor,
+                borderRadius: const BorderRadius.all(
+                  Radius.circular(4),
+                ),
+              ),
+              child: Center(
+                child: MaterialButton(
+                  onPressed: widget.onPressed,
+                  child: Icon(
+                    widget.iconData,
+                    size: widget.iconSize,
+                    color: _isHovering ? widget.buttonColor : widget.iconColor,
+                  ),
                 ),
               ),
             ),

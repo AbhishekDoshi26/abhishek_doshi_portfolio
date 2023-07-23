@@ -227,12 +227,12 @@ class _HeaderSectionWebState extends State<HeaderSectionWeb>
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     SelectableText(
-                                      "${StringConst.LinkedIn}:",
+                                      "${StringConst.LINKEDIN}:",
                                       style: socialTitleStyle,
                                     ),
                                     const SpaceH8(),
                                     SelectableText(
-                                      StringConst.LinkedInId,
+                                      StringConst.LINKEDIN_URL_SHORT,
                                       style: bodyTextStyle,
                                       onTap: () => openUrlLink(
                                           StringConst.LINKED_IN_URL),

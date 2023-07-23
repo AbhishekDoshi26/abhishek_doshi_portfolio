@@ -28,8 +28,9 @@ class StringConst {
   static const String DOWNLOAD_CV = "Download CV";
   static const String EMAIL = "Email";
   static const String DEV_EMAIL_2 = "adoshi26.ad@gmail.com";
-  static const String LinkedIn = "LinkedIn";
-  static const String LinkedInId = "linkedin.com/in/abhishekdoshi26";
+  static const String LINKEDIN = "LinkedIn";
+  static const String LINKEDIN_URL_SHORT = "linkedin.com/in/abhishekdoshi26";
+  static const String LINKEDINUSER = "@abhishekdoshi26";
   static const String HIRE_ME_NOW = "Hire Me Now";
   static const String FLUTTER_DEVELOPER = "Flutter Developer";
   static const String FLUTTER_DEVELOPER_DESC = "Creative apps for you";

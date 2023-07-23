@@ -76,21 +76,6 @@ class Data {
     ),
   ];
 
-  static List<SkillLevelData> skillLevelData = [
-    SkillLevelData(
-      skill: StringConst.SKILLS_1,
-      level: 95,
-    ),
-    SkillLevelData(
-      skill: StringConst.SKILLS_2,
-      level: 90,
-    ),
-    SkillLevelData(
-      skill: StringConst.SKILLS_3,
-      level: 80,
-    ),
-  ];
-
   static List<SkillCardData> skillCardData = [
     SkillCardData(
       title: StringConst.SKILLS_1,
@@ -242,7 +227,7 @@ class Data {
     ),
     const FooterItem(
       title: "${StringConst.FOLLOW_ME_2}:",
-      subtitle: StringConst.LinkedInId,
+      subtitle: StringConst.LINKEDINUSER,
       iconData: FontAwesomeIcons.linkedinIn,
       url: StringConst.LINKED_IN_URL,
     ),

@@ -40,7 +40,7 @@ class _SkillsSectionViewState extends State<SkillsSectionView>
   Widget build(BuildContext context) {
     double screenWidth = widthOfScreen(context) - (getSidePadding(context) * 2);
     double screenHeight = heightOfScreen(context);
-    double contentAreaWidthLg = screenWidth * 0.5;
+    double contentAreaWidthLg = screenWidth;
     double contentAreaWidthSm = screenWidth;
     double contentAreaHeight = responsiveSize(
       context,
@@ -69,11 +69,6 @@ class _SkillsSectionViewState extends State<SkillsSectionView>
                 children: [
                   ContentArea(
                     width: contentAreaWidthSm,
-                    child: _buildPortfolioSm(width: contentAreaWidthSm),
-                  ),
-                  const SpaceH40(),
-                  ContentArea(
-                    width: contentAreaWidthSm,
                     child: Center(
                       child: Column(
                         children: _buildBoxesSm(Data.skillCardData),
@@ -97,13 +92,8 @@ class _SkillsSectionViewState extends State<SkillsSectionView>
                 children: [
                   ContentArea(
                     width: contentAreaWidthSm,
-                    child: _buildPortfolioSm(width: contentAreaWidthSm),
-                  ),
-                  const SpaceH40(),
-                  ContentArea(
-                    width: contentAreaWidthSm,
                     child: Center(
-                      child: _buildSkillBoxes(boxHeight: 250),
+                      child: _buildSkillBoxes(boxHeight: 250, isWeb: false),
                     ),
                   ),
                 ],
@@ -118,21 +108,38 @@ class _SkillsSectionViewState extends State<SkillsSectionView>
                   _controller.forward();
                 }
               },
-              child: Row(
+              child: Column(
                 children: [
-                  ContentArea(
-                    width: contentAreaWidthLg,
-                    child: _buildSkillsLg(width: contentAreaWidthLg),
-                  ),
-                  ContentArea(
-                    width: contentAreaWidthLg,
-                    height: contentAreaHeight,
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: Sizes.HEIGHT_48),
-                    child: Center(
-                      child: _buildSkillBoxes(
-                        boxHeight: 250,
-                        crossAxisCount: 2,
+                  InfoSection1(
+                    sectionTitle: StringConst.MY_SKILLS,
+                    title1: StringConst.SKILLS_TITLE_1,
+                    title2: StringConst.SKILLS_TITLE_2,
+                    body: StringConst.SKILLS_DESC,
+                    child: ContentArea(
+                      width: contentAreaWidthLg,
+                      height: screenWidth <= 1160
+                          ? contentAreaHeight
+                          : contentAreaHeight / 2,
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: Sizes.HEIGHT_48),
+                      child: Wrap(
+                        children: Data.skillCardData.map(
+                          (e) {
+                            if (e.title.isEmpty) {
+                              return const SizedBox.shrink();
+                            }
+                            return Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: SkillCard(
+                                title: e.title,
+                                height: 250,
+                                width: screenWidth / 5.5,
+                                description: e.description,
+                                iconData: e.iconData,
+                              ),
+                            );
+                          },
+                        ).toList(),
                       ),
                     ),
                   ),
@@ -145,26 +152,9 @@ class _SkillsSectionViewState extends State<SkillsSectionView>
     );
   }
 
-  List<Widget> _buildSkillSection(
-    List<SkillLevelData> skillLevels,
-    double width,
-  ) {
-    List<Widget> items = [];
-    for (int index = 0; index < skillLevels.length; index++) {
-      items.add(
-        SkillLevel(
-          skillLevelWidth: width,
-          controller: _controller,
-          skill: skillLevels[index].skill,
-          level: skillLevels[index].level,
-        ),
-      );
-    }
-    return items;
-  }
-
   Widget _buildSkillBoxes({
     required double boxHeight,
+    required bool isWeb,
     int crossAxisCount = 2,
     double? boxWidth,
   }) {
@@ -216,48 +206,5 @@ class _SkillsSectionViewState extends State<SkillsSectionView>
       }
     }
     return items;
-  }
-
-  Widget _buildSkillsLg({required double width}) {
-    return Row(
-      children: [
-        Expanded(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              InfoSection1(
-                sectionTitle: StringConst.MY_SKILLS,
-                title1: StringConst.SKILLS_TITLE_1,
-                title2: StringConst.SKILLS_TITLE_2,
-                body: StringConst.SKILLS_DESC,
-                child: Wrap(
-                  runSpacing: kRunSpacing,
-                  children: _buildSkillSection(
-                    Data.skillLevelData,
-                    width,
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
-      ],
-    );
-  }
-
-  Widget _buildPortfolioSm({required double width}) {
-    return InfoSection2(
-      sectionTitle: StringConst.MY_SKILLS,
-      title1: StringConst.SKILLS_TITLE_1,
-      title2: StringConst.SKILLS_TITLE_2,
-      body: StringConst.SKILLS_DESC,
-      child: Wrap(
-        runSpacing: kRunSpacing,
-        children: _buildSkillSection(
-          Data.skillLevelData,
-          width,
-        ),
-      ),
-    );
   }
 }

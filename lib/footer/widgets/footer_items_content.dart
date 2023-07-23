@@ -1,29 +1,46 @@
 import 'package:abhishek_doshi_portfolio/footer/footer.dart';
-import 'package:abhishek_doshi_portfolio/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
-class FooterItemsContent {
-  static List<Widget> buildFooterItems(List<FooterItem> data,
-      {bool isHorizontal = false}) {
-    List<Widget> items = [];
+class FooterItemContent extends StatelessWidget {
+  const FooterItemContent({
+    required this.data,
+    this.isHorizontal = false,
+    super.key,
+  });
 
-    for (int index = 0; index < data.length; index++) {
-      items.add(
-        FooterItem(
-          title: data[index].title,
-          subtitle: data[index].subtitle,
-          iconData: data[index].iconData,
-          url: data[index].url,
-        ),
+  final List<FooterItem> data;
+  final bool isHorizontal;
+
+  @override
+  Widget build(BuildContext context) {
+    if (isHorizontal) {
+      return Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: data
+            .map(
+              (data) => FooterItem(
+                title: data.title,
+                subtitle: data.subtitle,
+                iconData: data.iconData,
+                url: data.url,
+              ),
+            )
+            .toList(),
       );
-      if (index < data.length - 1) {
-        if (isHorizontal) {
-          items.add(const Spacer(flex: 2));
-        } else {
-          items.add(const SpaceH40());
-        }
-      }
+    } else {
+      return Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: data
+            .map(
+              (data) => FooterItem(
+                title: data.title,
+                subtitle: data.subtitle,
+                iconData: data.iconData,
+                url: data.url,
+              ),
+            )
+            .toList(),
+      );
     }
-    return items;
   }
 }
