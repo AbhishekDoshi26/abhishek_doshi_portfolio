@@ -119,6 +119,8 @@ class _BlogSectionViewState extends State<BlogSectionView> {
                       height: screenWidth + 250,
                       child: CarouselSlider.builder(
                         itemCount: blogLength,
+                        carouselController: _carouselController,
+                        disableGesture: false,
                         itemBuilder: (
                           BuildContext context,
                           int index,
@@ -153,6 +155,7 @@ class _BlogSectionViewState extends State<BlogSectionView> {
                           child: CarouselSlider.builder(
                             itemCount: blogLength,
                             carouselController: _carouselController,
+                            disableGesture: false,
                             itemBuilder: (BuildContext context, int index,
                                 int pageViewIndex) {
                               return BlogCard(
@@ -208,7 +211,6 @@ class _BlogSectionViewState extends State<BlogSectionView> {
     double viewportFraction = 1.0,
     double aspectRatio = 0.1,
     int initialPage = 1,
-    ScrollPhysics? scrollPhysics = const NeverScrollableScrollPhysics(),
   }) {
     return CarouselOptions(
         autoPlay: autoPlay,
@@ -217,7 +219,6 @@ class _BlogSectionViewState extends State<BlogSectionView> {
         viewportFraction: viewportFraction,
         aspectRatio: aspectRatio,
         initialPage: initialPage,
-        scrollPhysics: scrollPhysics,
         onPageChanged: (int index, CarouselPageChangedReason reason) {
           setState(() {
             currentPageIndex = index;
