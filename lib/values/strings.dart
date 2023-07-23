@@ -168,5 +168,5 @@ class StringConst {
   static const String TWITTER_URL = "https://twitter.com/AbhishekDoshi26";
   static const String MEDIUM_URL = "https://abhishekdoshi26.medium.com/";
   static const String CV_URL =
-      "https://drive.google.com/file/d/1HWsXfaLggJmfSl7WNuy2qxaINWalVvsc/view?usp=sharing";
+      "https://drive.google.com/file/d/1ONtjrwMe0Wgwo62pNz03g3WLPP_rn6YC/view?usp=sharing";
 }

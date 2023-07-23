@@ -32,11 +32,14 @@ class FooterItemContent extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: data
             .map(
-              (data) => FooterItem(
-                title: data.title,
-                subtitle: data.subtitle,
-                iconData: data.iconData,
-                url: data.url,
+              (data) => Padding(
+                padding: const EdgeInsets.symmetric(vertical: 20.0),
+                child: FooterItem(
+                  title: data.title,
+                  subtitle: data.subtitle,
+                  iconData: data.iconData,
+                  url: data.url,
+                ),
               ),
             )
             .toList(),

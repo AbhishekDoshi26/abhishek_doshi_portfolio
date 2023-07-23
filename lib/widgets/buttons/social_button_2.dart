@@ -119,8 +119,8 @@ class _SocialButton2State extends State<SocialButton2>
                 ),
               ),
               child: Center(
-                child: MaterialButton(
-                  onPressed: widget.onPressed,
+                child: InkWell(
+                  onTap: widget.onPressed,
                   child: Icon(
                     widget.iconData,
                     size: widget.iconSize,
