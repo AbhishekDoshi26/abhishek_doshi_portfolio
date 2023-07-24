@@ -50,7 +50,7 @@ class _BlogSectionViewState extends State<BlogSectionView> {
           children: [
             ResponsiveBuilder(builder: (context, sizingInformation) {
               double screenWidth = sizingInformation.screenSize.width;
-              if (screenWidth <= (const RefinedBreakpoints().tabletSmall)) {
+              if (screenWidth <= (const RefinedBreakpoints().tabletNormal)) {
                 return ContentArea(
                   padding: padding,
                   child: Column(

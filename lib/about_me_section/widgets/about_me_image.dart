@@ -1,8 +1,6 @@
 import 'package:abhishek_doshi_portfolio/utils/utils.dart';
 import 'package:abhishek_doshi_portfolio/values/values.dart';
-import 'package:abhishek_doshi_portfolio/widgets/widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:responsive_builder/responsive_builder.dart';
 
 class AboutMeImage extends StatelessWidget {
   const AboutMeImage({
@@ -33,46 +31,23 @@ class AboutMeImage extends StatelessWidget {
     return Stack(
       children: [
         Positioned(
-          top: height * 0.1,
-          right: -(width * 0.20),
-          child: ResponsiveBuilder(
-            refinedBreakpoints: const RefinedBreakpoints(),
-            builder: (context, sizingInformation) {
-              double screenWidth = sizingInformation.screenSize.width;
-              if (screenWidth < (const RefinedBreakpoints().tabletLarge)) {
-                return Image.asset(
-                  ImagePath.kBlobBlack,
-                  height: height * 0.25,
-                  width: width * 0.25,
-                );
-              } else {
-                return const Empty();
-              }
-            },
+          left: 0,
+          bottom: 0,
+          child: ScaleTransition(
+            scale: scaleAnimation,
+            child: Image.asset(
+              ImagePath.kDotsGlobeGrey,
+              width: 180,
+              height: 180,
+            ),
           ),
         ),
-        Stack(
-          children: [
-            Positioned(
-              left: 0,
-              bottom: 0,
-              child: ScaleTransition(
-                scale: scaleAnimation,
-                child: Image.asset(
-                  ImagePath.kDotsGlobeGrey,
-                  width: 180,
-                  height: 180,
-                ),
-              ),
-            ),
-            ScaleTransition(
-              scale: scaleAnimation,
-              child: Image.asset(
-                ImagePath.kDevAboutMe,
-                width: width * 0.95,
-              ),
-            ),
-          ],
+        ScaleTransition(
+          scale: scaleAnimation,
+          child: Image.asset(
+            ImagePath.kDevAboutMe,
+            width: width * 0.95,
+          ),
         ),
         Positioned(
           top: width * 0.2,

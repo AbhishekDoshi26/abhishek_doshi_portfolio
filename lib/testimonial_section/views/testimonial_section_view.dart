@@ -232,7 +232,7 @@ class _TestimonialSectionViewState extends State<TestimonialSectionView>
         options: CarouselOptions(
           height: responsiveSize(context, 310, 310),
           autoPlay: true,
-          viewportFraction: responsiveSize(context, 1, 0.4, md: 0.5),
+          viewportFraction: responsiveSize(context, 1, 0.5, md: 1),
         ),
         items: buildCardRow(
           context: context,

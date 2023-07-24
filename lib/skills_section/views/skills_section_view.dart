@@ -65,17 +65,19 @@ class _SkillsSectionViewState extends State<SkillsSectionView>
                   _controller.forward();
                 }
               },
-              child: Column(
-                children: [
-                  ContentArea(
-                    width: contentAreaWidthSm,
-                    child: Center(
-                      child: Column(
-                        children: _buildBoxesSm(Data.skillCardData),
-                      ),
+              child: InfoSection2(
+                sectionTitle: StringConst.MY_SKILLS,
+                title1: StringConst.SKILLS_TITLE_1,
+                title2: StringConst.SKILLS_TITLE_2,
+                body: StringConst.SKILLS_DESC,
+                child: ContentArea(
+                  width: contentAreaWidthSm,
+                  child: Center(
+                    child: Column(
+                      children: _buildBoxesSm(Data.skillCardData),
                     ),
                   ),
-                ],
+                ),
               ),
             );
           } else if (screenWidth > const RefinedBreakpoints().tabletSmall &&
@@ -88,15 +90,17 @@ class _SkillsSectionViewState extends State<SkillsSectionView>
                   _controller.forward();
                 }
               },
-              child: Column(
-                children: [
-                  ContentArea(
-                    width: contentAreaWidthSm,
-                    child: Center(
-                      child: _buildSkillBoxes(boxHeight: 250, isWeb: false),
-                    ),
+              child: InfoSection2(
+                sectionTitle: StringConst.MY_SKILLS,
+                title1: StringConst.SKILLS_TITLE_1,
+                title2: StringConst.SKILLS_TITLE_2,
+                body: StringConst.SKILLS_DESC,
+                child: ContentArea(
+                  width: contentAreaWidthSm,
+                  child: Center(
+                    child: _buildSkillBoxes(boxHeight: 250, isWeb: false),
                   ),
-                ],
+                ),
               ),
             );
           } else {
@@ -108,42 +112,38 @@ class _SkillsSectionViewState extends State<SkillsSectionView>
                   _controller.forward();
                 }
               },
-              child: Column(
-                children: [
-                  InfoSection1(
-                    sectionTitle: StringConst.MY_SKILLS,
-                    title1: StringConst.SKILLS_TITLE_1,
-                    title2: StringConst.SKILLS_TITLE_2,
-                    body: StringConst.SKILLS_DESC,
-                    child: ContentArea(
-                      width: contentAreaWidthLg,
-                      height: screenWidth <= 1160
-                          ? contentAreaHeight
-                          : contentAreaHeight / 2,
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: Sizes.HEIGHT_48),
-                      child: Wrap(
-                        children: Data.skillCardData.map(
-                          (e) {
-                            if (e.title.isEmpty) {
-                              return const SizedBox.shrink();
-                            }
-                            return Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: SkillCard(
-                                title: e.title,
-                                height: 250,
-                                width: screenWidth / 5.5,
-                                description: e.description,
-                                iconData: e.iconData,
-                              ),
-                            );
-                          },
-                        ).toList(),
-                      ),
-                    ),
+              child: InfoSection1(
+                sectionTitle: StringConst.MY_SKILLS,
+                title1: StringConst.SKILLS_TITLE_1,
+                title2: StringConst.SKILLS_TITLE_2,
+                body: StringConst.SKILLS_DESC,
+                child: ContentArea(
+                  width: contentAreaWidthLg,
+                  height: screenWidth <= 1160
+                      ? contentAreaHeight
+                      : contentAreaHeight / 2,
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: Sizes.HEIGHT_48),
+                  child: Wrap(
+                    children: Data.skillCardData.map(
+                      (e) {
+                        if (e.title.isEmpty) {
+                          return const SizedBox.shrink();
+                        }
+                        return Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: SkillCard(
+                            title: e.title,
+                            height: 250,
+                            width: screenWidth / 5.5,
+                            description: e.description,
+                            iconData: e.iconData,
+                          ),
+                        );
+                      },
+                    ).toList(),
                   ),
-                ],
+                ),
               ),
             );
           }

@@ -57,40 +57,16 @@ class _HeaderSectionMobileState extends State<HeaderSectionMobile>
     double heightOfBlobAndGlobe =
         computeHeight(dottedGoldenGlobeOffset, sizeOfGoldenGlobe, sizeOfBlobSm);
     double heightOfStack = heightOfBlobAndGlobe * 2;
-    double blobOffset = heightOfStack * 0.3;
+
     return ContentArea(
       child: Stack(
         children: [
-          SizedBox(
-            height: heightOfStack,
-            child: Stack(
-              children: [
-                Stack(
-                  children: [
-                    Positioned(
-                      left: -(sizeOfGoldenGlobe / 3),
-                      top: blobOffset + dottedGoldenGlobeOffset,
-                      child: RotationTransition(
-                        turns: _controller,
-                        child: Image.asset(
-                          ImagePath.kDotsGlobeYeloow,
-                          width: sizeOfGoldenGlobe,
-                          height: sizeOfGoldenGlobe,
-                          color: AppColors.primaryColor,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-                Positioned(
-                  right: -(sizeOfBlobSm),
-                  child: HeaderImage(
-                    controller: _controller,
-                    globeSize: sizeOfGoldenGlobe,
-                    imageHeight: heightOfStack,
-                  ),
-                ),
-              ],
+          Positioned(
+            right: -(sizeOfBlobSm),
+            child: HeaderImage(
+              controller: _controller,
+              globeSize: sizeOfGoldenGlobe,
+              imageHeight: heightOfStack,
             ),
           ),
           Column(
