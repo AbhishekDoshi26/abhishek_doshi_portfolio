@@ -128,36 +128,37 @@ class Data {
       name: StringConst.TESTIMONIALS_1_NAME,
       position: StringConst.TESTIMONIALS_1_POSITION,
       testimonial: StringConst.TESTIMONIALS_1,
-      image:
-          "https://media.licdn.com/dms/image/C4D03AQHkiVADDkujMg/profile-displayphoto-shrink_800_800/0/1640115715976?e=1695254400&v=beta&t=rCHRE1ekPudz2VB12j0r1nZ5wf6jbvaZYnHupKLEQpU",
+      image: StringConst.TESTIMONIALS_1_URL,
     ),
     TestimonialSectionModel(
       name: StringConst.TESTIMONIALS_2_NAME,
       position: StringConst.TESTIMONIALS_2_POSITION,
       testimonial: StringConst.TESTIMONIALS_2,
-      image:
-          "https://media.licdn.com/dms/image/D4D03AQF-gKzz9c-3_w/profile-displayphoto-shrink_800_800/0/1673735338704?e=1695254400&v=beta&t=w_zsbHxAAyxmN_G2ifAWQAbORfUgqXFf0Z8cwi00p4E",
+      image: StringConst.TESTIMONIALS_2_URL,
     ),
     TestimonialSectionModel(
       name: StringConst.TESTIMONIALS_3_NAME,
       position: StringConst.TESTIMONIALS_3_POSITION,
       testimonial: StringConst.TESTIMONIALS_3,
-      image:
-          "https://media.licdn.com/dms/image/C4E03AQGu3Crb8-eDsA/profile-displayphoto-shrink_800_800/0/1639332512074?e=1695254400&v=beta&t=cxpdwCEx3_HbJzoQ7w9aWVT7GjjLvYnpi6xkZ4_q5w0",
+      image: StringConst.TESTIMONIALS_3_URL,
     ),
     TestimonialSectionModel(
       name: StringConst.TESTIMONIALS_4_NAME,
       position: StringConst.TESTIMONIALS_4_POSITION,
       testimonial: StringConst.TESTIMONIALS_4,
-      image:
-          "https://media.licdn.com/dms/image/C5103AQFYQq5YimCe4Q/profile-displayphoto-shrink_800_800/0/1531022038075?e=1695254400&v=beta&t=jKxdEAp6wLNaA_Khnq2jQ2MY8B-J9GPOslXsHxFAdNk",
+      image: StringConst.TESTIMONIALS_4_URL,
     ),
     TestimonialSectionModel(
       name: StringConst.TESTIMONIALS_5_NAME,
       position: StringConst.TESTIMONIALS_5_POSITION,
       testimonial: StringConst.TESTIMONIALS_5,
-      image:
-          "https://media.licdn.com/dms/image/C5103AQGCTusGo7Dmkw/profile-displayphoto-shrink_800_800/0/1581185483397?e=1695254400&v=beta&t=z8-4G99_w0fR0pKObGbkfhg9buAyzMGbpRtg_qH7C7M",
+      image: StringConst.TESTIMONIALS_5_URL,
+    ),
+    TestimonialSectionModel(
+      name: StringConst.TESTIMONIALS_6_NAME,
+      position: StringConst.TESTIMONIALS_6_POSITION,
+      testimonial: StringConst.TESTIMONIALS_6,
+      image: StringConst.TESTIMONIALS_6_URL,
     ),
   ];
 
