@@ -49,6 +49,11 @@ git clone https://github.com/AbhishekDoshi26/abhishek_doshi_portfolio.git
 flutter run
 ```
 
+4. To deploy, run the following command:
+```
+flutter build web --web-renderer canvaskit; firebase deploy
+```
+
 
 ## 📖 Usage
 
