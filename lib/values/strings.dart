@@ -139,6 +139,12 @@ class StringConst {
   static const String TESTIMONIALS_6_URL =
       "https://media.licdn.com/dms/image/C4E03AQHZDsL83-Om2w/profile-displayphoto-shrink_800_800/0/1652992055219?e=1695859200&v=beta&t=dHaMk0U7xxCrUD_7Zs0Fz5zEaIpRJTJisKN0RG0dmRA";
 
+  static const String TESTIMONIALS_7_NAME = "Hafeez Rana";
+  static const String TESTIMONIALS_7_POSITION = "Flutter Developer";
+  static const String TESTIMONIALS_7 =
+      "Abhishek is a senior Flutter developer who has been a great mentor and colleague to me. He has taught me many things about developing cross-platform mobile applications using the latest technologies and frameworks. He is also a nice guy who is easy to work with and always willing to help. I would love to work with him again in the future. Thank you so much, Abhishek, for your valuable guidance and support . Flutter Dev 💙🙌";
+  static const String TESTIMONIALS_7_URL =
+      "https://media.licdn.com/dms/image/D4D03AQFterTQxWFNjQ/profile-displayphoto-shrink_800_800/0/1668656425985?e=1697068800&v=beta&t=HCvzP1xCYYSW62X7QagFDc336jsOreeoL8Ld_3BUoXY";
   //Blog Section
   static const String MY_BLOG = "my blog";
   static const String BLOG_SECTION_TITLE_1 = "Some Recent Blogs";
