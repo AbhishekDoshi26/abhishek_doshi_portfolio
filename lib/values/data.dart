@@ -171,11 +171,19 @@ class Data {
   static List<BlogCardData> blogData = [
     BlogCardData(
       category: StringConst.BLOG_CATEGORY_1,
-      title: StringConst.BLOG_TITLE_1,
-      date: StringConst.BLOG_DATE_1,
+      title: StringConst.BLOG_TITLE_4,
+      date: StringConst.BLOG_DATE_4,
       buttonText: StringConst.READ_MORE,
-      imageUrl: ImagePath.kBlog01,
-      url: StringConst.BLOG_URL_1,
+      imageUrl: ImagePath.kBlog04,
+      url: StringConst.BLOG_URL_4,
+    ),
+    BlogCardData(
+      category: StringConst.BLOG_CATEGORY_1,
+      title: StringConst.BLOG_TITLE_3,
+      date: StringConst.BLOG_DATE_3,
+      buttonText: StringConst.READ_MORE,
+      imageUrl: ImagePath.kBlog03,
+      url: StringConst.BLOG_URL_3,
     ),
     BlogCardData(
       category: StringConst.BLOG_CATEGORY_1,
@@ -187,11 +195,11 @@ class Data {
     ),
     BlogCardData(
       category: StringConst.BLOG_CATEGORY_2,
-      title: StringConst.BLOG_TITLE_3,
-      date: StringConst.BLOG_DATE_3,
+      title: StringConst.BLOG_TITLE_1,
+      date: StringConst.BLOG_DATE_1,
       buttonText: StringConst.READ_MORE,
-      imageUrl: ImagePath.kBlog03,
-      url: StringConst.BLOG_URL_3,
+      imageUrl: ImagePath.kBlog01,
+      url: StringConst.BLOG_URL_1,
     ),
   ];
 

@@ -31,9 +31,12 @@ class ImagePath {
 
   // Blog Images
   static const String kBlog01 =
-      "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*cAnaMR6CTRVXIocFvEoW5Q.png";
+      "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*QEmffIPXSn0HT571Fmfdnw.png";
+
   static const String kBlog02 =
       "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*ZpQmrMxB7UE53ufQlm_ZwA.png";
   static const String kBlog03 =
-      "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*QEmffIPXSn0HT571Fmfdnw.png";
+      "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*cAnaMR6CTRVXIocFvEoW5Q.png";
+  static const String kBlog04 =
+      "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*d7-vmPj45UgQZ3lp0EKP7A.png";
 }

@@ -156,9 +156,15 @@ class StringConst {
   static const String BLOG_CATEGORY_1 = "flutter";
   static const String BLOG_CATEGORY_2 = "firebase";
 
-  static const String BLOG_TITLE_1 = "BLoC — The Magic of Single State Class";
-  static const String BLOG_DATE_1 = "July 2, 2023";
-  static const String BLOG_URL_1 =
+  static const String BLOG_TITLE_4 =
+      "Package-based architecture - Let's deliver the packages";
+  static const String BLOG_DATE_4 = "August 27, 2023";
+  static const String BLOG_URL_4 =
+      "https://medium.com/@abhishekdoshi26/package-based-architecture-lets-deliver-the-packages-d8ef80a6607d";
+
+  static const String BLOG_TITLE_3 = "BLoC — The Magic of Single State Class";
+  static const String BLOG_DATE_3 = "July 2, 2023";
+  static const String BLOG_URL_3 =
       "https://medium.com/google-developer-experts/bloc-single-state-class-5a66fdffb270";
 
   static const String BLOG_TITLE_2 = "Records & Patterns — Dart | Flutter";
@@ -166,9 +172,9 @@ class StringConst {
   static const String BLOG_URL_2 =
       "https://medium.com/google-developer-experts/records-patterns-824447a9f2b1";
 
-  static const String BLOG_TITLE_3 = "Firebase App Distribution — Flutter";
-  static const String BLOG_DATE_3 = "February 2, 2023";
-  static const String BLOG_URL_3 =
+  static const String BLOG_TITLE_1 = "Firebase App Distribution — Flutter";
+  static const String BLOG_DATE_1 = "February 2, 2023";
+  static const String BLOG_URL_1 =
       "https://medium.com/google-developer-experts/firebase-app-distribution-e41420f8cdcc";
 
   static const String READ_MORE = "Read More";
