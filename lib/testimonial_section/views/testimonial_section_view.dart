@@ -3,7 +3,6 @@ import 'package:abhishek_doshi_portfolio/testimonial_section/testimonial_section
 import 'package:abhishek_doshi_portfolio/utils/utils.dart';
 import 'package:abhishek_doshi_portfolio/values/values.dart';
 import 'package:abhishek_doshi_portfolio/widgets/widgets.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
@@ -289,8 +288,7 @@ class _TestimonialSectionViewState extends State<TestimonialSectionView>
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: CircleAvatar(
-                  backgroundImage:
-                      CachedNetworkImageProvider(data[index].image),
+                  backgroundImage: NetworkImage(data[index].image),
                 ),
               ),
               Column(

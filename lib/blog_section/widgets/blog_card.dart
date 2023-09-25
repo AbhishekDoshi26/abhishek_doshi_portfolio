@@ -1,7 +1,6 @@
 import 'package:abhishek_doshi_portfolio/utils/utils.dart';
 import 'package:abhishek_doshi_portfolio/values/values.dart';
 import 'package:abhishek_doshi_portfolio/widgets/widgets.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 class BlogCard extends StatefulWidget {
@@ -85,8 +84,8 @@ class _BlogCardState extends State<BlogCard> {
                           borderRadius: const BorderRadius.all(
                             Radius.circular(Sizes.RADIUS_16),
                           ),
-                          child: CachedNetworkImage(
-                            imageUrl: widget.imageUrl,
+                          child: Image.network(
+                            widget.imageUrl,
                             fit: BoxFit.cover,
                           ),
                         ),
