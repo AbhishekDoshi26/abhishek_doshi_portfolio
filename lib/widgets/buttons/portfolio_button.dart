@@ -29,7 +29,7 @@ class PortfolioButton extends StatelessWidget {
   final TextStyle? titleStyle;
   final Color titleColor;
   final Color buttonColor;
-  final BorderRadius? borderRadius;
+  final BorderRadiusGeometry? borderRadius;
   final EdgeInsetsGeometry padding;
   final String url;
   final LinkTarget linkTarget;
@@ -38,7 +38,7 @@ class PortfolioButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
-      borderRadius: borderRadius,
+      borderRadius: borderRadius ?? BorderRadius.zero,
       child: MaterialButton(
         minWidth: width,
         height: height,
