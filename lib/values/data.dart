@@ -8,6 +8,11 @@ class Data {
       url: StringConst.EMAIL_URL,
     ),
     SocialButtonData(
+      tag: StringConst.CALENDLY,
+      iconData: FontAwesomeIcons.calendar,
+      url: StringConst.CALENDAR_URL,
+    ),
+    SocialButtonData(
       tag: StringConst.LINKED_IN_URL,
       iconData: FontAwesomeIcons.linkedin,
       url: StringConst.LINKED_IN_URL,
@@ -165,6 +170,24 @@ class Data {
       position: StringConst.TESTIMONIALS_7_POSITION,
       testimonial: StringConst.TESTIMONIALS_7,
       image: StringConst.TESTIMONIALS_7_URL,
+    ),
+    TestimonialSectionModel(
+      name: StringConst.TESTIMONIALS_8_NAME,
+      position: StringConst.TESTIMONIALS_8_POSITION,
+      testimonial: StringConst.TESTIMONIALS_8,
+      image: StringConst.TESTIMONIALS_8_URL,
+    ),
+    TestimonialSectionModel(
+      name: StringConst.TESTIMONIALS_9_NAME,
+      position: StringConst.TESTIMONIALS_9_POSITION,
+      testimonial: StringConst.TESTIMONIALS_9,
+      image: StringConst.TESTIMONIALS_9_URL,
+    ),
+    TestimonialSectionModel(
+      name: StringConst.TESTIMONIALS_10_NAME,
+      position: StringConst.TESTIMONIALS_10_POSITION,
+      testimonial: StringConst.TESTIMONIALS_10,
+      image: StringConst.TESTIMONIALS_10_URL,
     ),
   ];
 

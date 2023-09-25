@@ -18,6 +18,7 @@ class StringConst {
   static const String CONTACT_ME = "Contact Me";
   static const String DEV_EMAIL = "adoshi26.ad@gmail.com";
   static const String EMAIL_URL = "mailto:$DEV_EMAIL";
+  static const String CALENDAR_URL = "https://calendly.com/abhishekdoshi26";
 
   //Header Section
   static const String FIRST_NAME = "Abhishek";
@@ -27,6 +28,7 @@ class StringConst {
       "Google Developer Expert for Dart, Flutter & Firebase. Working in Flutter and Firebase from past 5 years. With deep experience in Flutter & Firebase, let's give your idea a life. Community Leader & Content Creator.";
   static const String DOWNLOAD_CV = "Download CV";
   static const String EMAIL = "Email";
+  static const String CALENDLY = "Calendly";
   static const String DEV_EMAIL_2 = "adoshi26.ad@gmail.com";
   static const String LINKEDIN = "LinkedIn";
   static const String LINKEDIN_URL_SHORT = "linkedin.com/in/abhishekdoshi26";
@@ -78,11 +80,11 @@ class StringConst {
 
   //Stats Section
   static const String HAPPY_CLIENTS = "Happy Clients";
-  static const String HAPPY_CLIENTS_NUM = "8";
+  static const String HAPPY_CLIENTS_NUM = "12";
   static const String YEARS_OF_EXPERIENCE = "Years of Experience";
   static const String YEARS_OF_EXPERIENCE_NUM = "5";
   static const String INCREDIBLE_PROJECTS = "Incredible Projects";
-  static const String INCREDIBLE_PROJECTS_NUM = "58";
+  static const String INCREDIBLE_PROJECTS_NUM = "62";
 
   //Brands Section
   static const String BRANDS_SECTION_TITLE = "Brands I've worked with";
@@ -101,14 +103,14 @@ class StringConst {
   static const String TESTIMONIALS_1 =
       "Abhi is an expert Mobile app developer. His technical skills are impressive and come up with multiple solutions to a problem. He has an outstanding network and is a Google Developer Expert. He makes sure all the deadlines should meet the highest standards. He is a hardworking and dedicated person who will complete projects in a given time frame. I really enjoyed working alongside him. Great person and team mate!";
   static const String TESTIMONIALS_1_URL =
-      "https://media.licdn.com/dms/image/C4D03AQHkiVADDkujMg/profile-displayphoto-shrink_800_800/0/1640115715976?e=1695254400&v=beta&t=rCHRE1ekPudz2VB12j0r1nZ5wf6jbvaZYnHupKLEQpU";
+      "https://cdn.discordapp.com/attachments/1155924014053732373/1155924069879922708/Juan_Luna.jpeg";
 
   static const String TESTIMONIALS_2_NAME = "Akansha Jain";
   static const String TESTIMONIALS_2_POSITION = "Software Developer - Mokutan";
   static const String TESTIMONIALS_2 =
       "I had the privilege of being mentored by Mr. Abhishek Doshi in Flutter development, and I wholeheartedly recommend his guidance. He possesses an exceptional depth of knowledge in Flutter and consistently demonstrated a passion for teaching. His patient and clear explanations helped me grasp complex concepts easily, and his practical approach to learning enabled me to apply my skills effectively.\n\nThrough his mentorship, I gained invaluable insights into best practices, coding techniques, and the latest trends in Flutter development. He encouraged me to explore new possibilities and pushed me to overcome challenges. His friendly and approachable demeanor created a comfortable learning environment, fostering open discussions and collaboration.";
   static const String TESTIMONIALS_2_URL =
-      "https://media.licdn.com/dms/image/D4D03AQF-gKzz9c-3_w/profile-displayphoto-shrink_800_800/0/1673735338704?e=1695254400&v=beta&t=w_zsbHxAAyxmN_G2ifAWQAbORfUgqXFf0Z8cwi00p4E";
+      "https://cdn.discordapp.com/attachments/1155924014053732373/1155924296892416030/Akansha_Jain.jpeg";
 
   static const String TESTIMONIALS_3_NAME = "Jared Hasson";
   static const String TESTIMONIALS_3_POSITION =
@@ -116,35 +118,57 @@ class StringConst {
   static const String TESTIMONIALS_3 =
       "I am pleased to write this recommendation for Abhishek, who works with our team at Ostrich Cyber-Risk. Abhishek has displayed thorough expertise and knowledge while he's consulted on optimizing our Flutter codebase, helping us to improve its efficiency and readability.\n\nHis understanding of Dart and the Flutter framework plays a critical role in enhancing our web app. Abhishek has a keen eye for spotting potential areas of improvement and was proactive in making suggestions and implementing changes. His efficient problem-solving approach has resulted in streamlined code and improved software performance. Beyond his technical acumen, Abhishek demonstrates a thorough understanding of industry best practices. He is an avid member of the worldwide Flutter community, and as such, his insights are invaluable and have transformed our approach towards Flutter development. His dedication, professionalism, and passion for software development make him an asset to any team. I confidently recommend Abhishek to any organization looking for a committed, insightful, and highly skilled Flutter developer. His contributions have been significant and lasting. Working with him is a pleasure, and I am sure he will bring the same level of dedication and expertise to any team he joins.";
   static const String TESTIMONIALS_3_URL =
-      "https://media.licdn.com/dms/image/C4E03AQGu3Crb8-eDsA/profile-displayphoto-shrink_800_800/0/1639332512074?e=1695254400&v=beta&t=cxpdwCEx3_HbJzoQ7w9aWVT7GjjLvYnpi6xkZ4_q5w0";
+      "https://cdn.discordapp.com/attachments/1155924014053732373/1155924472667308174/Jared_Hasson.jpeg";
 
   static const String TESTIMONIALS_4_NAME = "Muhammad Mateen";
   static const String TESTIMONIALS_4_POSITION = "Software Engineer";
   static const String TESTIMONIALS_4 =
       "Abhi is an expert Mobile app developer. His technical skills are impressive and come up with multiple solutions to a problem. He has an outstanding network and is a Google Developer Expert.\n\nHe makes sure all the deadlines should meet the highest standards. He is a hardworking and dedicated person who will complete projects in a given time frame. I really enjoyed working alongside him.";
   static const String TESTIMONIALS_4_URL =
-      "https://media.licdn.com/dms/image/C5103AQFYQq5YimCe4Q/profile-displayphoto-shrink_800_800/0/1531022038075?e=1695254400&v=beta&t=jKxdEAp6wLNaA_Khnq2jQ2MY8B-J9GPOslXsHxFAdNk";
+      "https://cdn.discordapp.com/attachments/1155924014053732373/1155924682638360596/Muhammad_Mateen.jpeg";
 
   static const String TESTIMONIALS_5_NAME = "Bhavik Dodia";
   static const String TESTIMONIALS_5_POSITION = "Software Engineer";
   static const String TESTIMONIALS_5 =
       "Abhishek is a great leader and partner to work with. He always motivates others to try new things and grab new opportunities. He is a good developer, mentor, leader and he helps everyone.";
   static const String TESTIMONIALS_5_URL =
-      "https://media.licdn.com/dms/image/C5103AQGCTusGo7Dmkw/profile-displayphoto-shrink_800_800/0/1581185483397?e=1695254400&v=beta&t=z8-4G99_w0fR0pKObGbkfhg9buAyzMGbpRtg_qH7C7M";
+      "https://cdn.discordapp.com/attachments/1155924014053732373/1155924845167661146/Bhavik_Dodia.jpeg";
 
   static const String TESTIMONIALS_6_NAME = "Samia Ashraf";
   static const String TESTIMONIALS_6_POSITION = "Google Developer Expert";
   static const String TESTIMONIALS_6 =
       "I had the amazing opportunity to meet Abhishek during one of the interview rounds for GDE. He is a passionate Flutter developer who will go out of their way to teach fundamentals to anyone.\n\nHe motivates me to always put in extra effort and learn new things. A great addition to the team, i'm sure he will excel in any organization that he joins!";
   static const String TESTIMONIALS_6_URL =
-      "https://media.licdn.com/dms/image/C4E03AQHZDsL83-Om2w/profile-displayphoto-shrink_800_800/0/1652992055219?e=1695859200&v=beta&t=dHaMk0U7xxCrUD_7Zs0Fz5zEaIpRJTJisKN0RG0dmRA";
+      "https://cdn.discordapp.com/attachments/1155924014053732373/1155925087048974346/Samia_Ashraf.jpeg";
 
   static const String TESTIMONIALS_7_NAME = "Hafeez Rana";
   static const String TESTIMONIALS_7_POSITION = "Flutter Developer";
   static const String TESTIMONIALS_7 =
       "Abhishek is a senior Flutter developer who has been a great mentor and colleague to me. He has taught me many things about developing cross-platform mobile applications using the latest technologies and frameworks. He is also a nice guy who is easy to work with and always willing to help. I would love to work with him again in the future. Thank you so much, Abhishek, for your valuable guidance and support . Flutter Dev 💙🙌";
   static const String TESTIMONIALS_7_URL =
-      "https://media.licdn.com/dms/image/D4D03AQFterTQxWFNjQ/profile-displayphoto-shrink_800_800/0/1668656425985?e=1697068800&v=beta&t=HCvzP1xCYYSW62X7QagFDc336jsOreeoL8Ld_3BUoXY";
+      "https://cdn.discordapp.com/attachments/1155924014053732373/1155925232071217303/Hafeez_Rana.jpeg";
+
+  static const String TESTIMONIALS_8_NAME = "Gyan Upadhyay";
+  static const String TESTIMONIALS_8_POSITION = "S.D.E (Flutter)";
+  static const String TESTIMONIALS_8 =
+      "I highly recommend Abhishek as a skilled Flutter developer. His expertise in Flutter, along with their ability to create responsive and visually appealing UIs, makes them an invaluable asset to any project. He consistently deliver high-quality code and are adept at troubleshooting and problem-solving. His dedication to staying up-to-date with Flutter's latest developments ensures that they can tackle any challenge effectively. Overall, Abhishek would be a fantastic addition to your development team.";
+  static const String TESTIMONIALS_8_URL =
+      "https://cdn.discordapp.com/attachments/1155924014053732373/1155925816375513149/Gyan_Upadhyay.jpeg";
+
+  static const String TESTIMONIALS_9_NAME = "Utsav Ghimire";
+  static const String TESTIMONIALS_9_POSITION = "Software Engineer";
+  static const String TESTIMONIALS_9 =
+      "Working with Abhishek was not only professionally rewarding but also a genuinely pleasant experience. His positive attitude, collaborative nature, and strong work ethic made our collaboration enjoyable. I am genuinely looking forward to the opportunity to work with Abhishek on future projects. He's a valuable asset to any team, and I highly recommend him for his outstanding skills and his ability to foster a positive and productive work environment :)";
+  static const String TESTIMONIALS_9_URL =
+      "https://cdn.discordapp.com/attachments/1155924014053732373/1155926114074644500/Utsav_Ghimire.jpeg";
+
+  static const String TESTIMONIALS_10_NAME = "Matthias Raaz";
+  static const String TESTIMONIALS_10_POSITION = "Co-Founder at Deep5";
+  static const String TESTIMONIALS_10 =
+      "Absolutely recommend Abhishek as a Flutter developer. Outstanding expertise, exceptional communication skills. A top-notch collaborator!";
+  static const String TESTIMONIALS_10_URL =
+      "https://cdn.discordapp.com/attachments/1155924014053732373/1155926550496149604/Matthias_Raaz.jpeg";
+
   //Blog Section
   static const String MY_BLOG = "my blog";
   static const String BLOG_SECTION_TITLE_1 = "Some Recent Blogs";

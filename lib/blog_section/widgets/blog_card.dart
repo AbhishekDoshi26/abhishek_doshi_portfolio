@@ -1,6 +1,7 @@
 import 'package:abhishek_doshi_portfolio/utils/utils.dart';
 import 'package:abhishek_doshi_portfolio/values/values.dart';
 import 'package:abhishek_doshi_portfolio/widgets/widgets.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 class BlogCard extends StatefulWidget {
@@ -66,25 +67,28 @@ class _BlogCardState extends State<BlogCard> {
         children: [
           Stack(
             children: [
-              Container(
-                margin: const EdgeInsets.only(left: Sizes.MARGIN_16),
-                child: ClipRRect(
-                  borderRadius: const BorderRadius.all(
-                    Radius.circular(Sizes.RADIUS_16),
-                  ),
-                  child: MouseRegion(
-                    onEnter: (e) => _onImageHover(true),
-                    onExit: (e) => _onImageHover(false),
-                    child: AnimatedOpacity(
-                      opacity: _isHoveringOnImage ? 1.0 : 0.85,
-                      duration: const Duration(milliseconds: 300),
-                      child: ClipRRect(
-                        borderRadius: const BorderRadius.all(
-                          Radius.circular(Sizes.RADIUS_16),
-                        ),
-                        child: Image.network(
-                          widget.imageUrl,
-                          fit: BoxFit.cover,
+              InkWell(
+                onTap: widget.onPressed,
+                child: Container(
+                  margin: const EdgeInsets.only(left: Sizes.MARGIN_16),
+                  child: ClipRRect(
+                    borderRadius: const BorderRadius.all(
+                      Radius.circular(Sizes.RADIUS_16),
+                    ),
+                    child: MouseRegion(
+                      onEnter: (e) => _onImageHover(true),
+                      onExit: (e) => _onImageHover(false),
+                      child: AnimatedOpacity(
+                        opacity: _isHoveringOnImage ? 1.0 : 0.85,
+                        duration: const Duration(milliseconds: 300),
+                        child: ClipRRect(
+                          borderRadius: const BorderRadius.all(
+                            Radius.circular(Sizes.RADIUS_16),
+                          ),
+                          child: CachedNetworkImage(
+                            imageUrl: widget.imageUrl,
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
                     ),
