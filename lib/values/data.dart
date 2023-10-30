@@ -189,6 +189,24 @@ class Data {
       testimonial: StringConst.TESTIMONIALS_10,
       image: StringConst.TESTIMONIALS_10_URL,
     ),
+    TestimonialSectionModel(
+      name: StringConst.TESTIMONIALS_11_NAME,
+      position: StringConst.TESTIMONIALS_11_POSITION,
+      testimonial: StringConst.TESTIMONIALS_11,
+      image: StringConst.TESTIMONIALS_11_URL,
+    ),
+    TestimonialSectionModel(
+      name: StringConst.TESTIMONIALS_12_NAME,
+      position: StringConst.TESTIMONIALS_12_POSITION,
+      testimonial: StringConst.TESTIMONIALS_12,
+      image: StringConst.TESTIMONIALS_12_URL,
+    ),
+    TestimonialSectionModel(
+      name: StringConst.TESTIMONIALS_13_NAME,
+      position: StringConst.TESTIMONIALS_13_POSITION,
+      testimonial: StringConst.TESTIMONIALS_13,
+      image: StringConst.TESTIMONIALS_13_URL,
+    ),
   ];
 
   static List<BlogCardData> blogData = [

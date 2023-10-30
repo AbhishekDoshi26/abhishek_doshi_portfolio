@@ -169,6 +169,28 @@ class StringConst {
   static const String TESTIMONIALS_10_URL =
       "https://cdn.discordapp.com/attachments/1155924014053732373/1155926550496149604/Matthias_Raaz.jpeg";
 
+  static const String TESTIMONIALS_11_NAME = "Abhineya Beduru";
+  static const String TESTIMONIALS_11_POSITION = "GDSC Lead'23";
+  static const String TESTIMONIALS_11 =
+      "I feel very happy to get the opportunity to work with Abhishek. He is indeed not only just a great person but also a passionate and skilled flutter developer. He is a hardworking and dedicated person and always motivates me to put in some extra effort. He is a great mentor too and I am looking forward to learning more from him. And undoubtedly I would recommend him.";
+  static const String TESTIMONIALS_11_URL =
+      "https://cdn.discordapp.com/attachments/1168581756006449212/1168581795009269760/abhineya.jpeg";
+
+  static const String TESTIMONIALS_12_NAME = "Jayesh Seth";
+  static const String TESTIMONIALS_12_POSITION = "Android App Developer";
+  static const String TESTIMONIALS_12 =
+      "Abhishek is an exceptional flutter developer and organizer. He has deep knowledge and understanding of the flutter framework and dart language he also has helped and inspired me with his skill as a developer and community organizer. He is also a great communicator who can explain complex topics in simpler terms.";
+  static const String TESTIMONIALS_12_URL =
+      "https://cdn.discordapp.com/attachments/1005165773448290406/1118591731621974096/Jayesh.jpg";
+
+  static const String TESTIMONIALS_13_NAME = "Chirag Kalsariya";
+  static const String TESTIMONIALS_13_POSITION =
+      "Senior iOS & Flutter Developer";
+  static const String TESTIMONIALS_13 =
+      "Abhishek Doshi is an outstanding individual with a deep passion for Flutter and mobile app development. I have witnessed Abhishek's commitment to continuous improvement, which is reflected in his pursuit of becoming a Google Developer Expert in this domain. I have had the pleasure of directly managing Abhishek during his time as a team member in our organization. I have full confidence that he will make a significant and positive contribution to any organization.";
+  static const String TESTIMONIALS_13_URL =
+      "https://cdn.discordapp.com/attachments/1168581756006449212/1168582643684745308/chirag.jpeg";
+
   //Blog Section
   static const String MY_BLOG = "my blog";
   static const String BLOG_SECTION_TITLE_1 = "Some Recent Blogs";
