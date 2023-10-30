@@ -1,9 +1,11 @@
 import 'package:abhishek_doshi_portfolio/header_section/header_section.dart';
+import 'package:abhishek_doshi_portfolio/router/router.dart';
 import 'package:abhishek_doshi_portfolio/utils/utils.dart';
 import 'package:abhishek_doshi_portfolio/values/values.dart';
 import 'package:abhishek_doshi_portfolio/widgets/widgets.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class HeaderSectionWeb extends StatefulWidget {
@@ -217,8 +219,7 @@ class _HeaderSectionWebState extends State<HeaderSectionWeb>
                                     SelectableText(
                                       StringConst.DEV_EMAIL_2,
                                       style: bodyTextStyle,
-                                      onTap: () =>
-                                          openUrlLink(StringConst.EMAIL_URL),
+                                      onTap: () => context.go(Routes.email),
                                     ),
                                   ],
                                 ),

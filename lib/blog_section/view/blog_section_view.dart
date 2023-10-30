@@ -1,9 +1,11 @@
 import 'package:abhishek_doshi_portfolio/blog_section/blog_section.dart';
+import 'package:abhishek_doshi_portfolio/router/router.dart';
 import 'package:abhishek_doshi_portfolio/utils/utils.dart';
 import 'package:abhishek_doshi_portfolio/values/values.dart';
 import 'package:abhishek_doshi_portfolio/widgets/widgets.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class BlogSectionView extends StatefulWidget {
@@ -71,7 +73,7 @@ class _BlogSectionViewState extends State<BlogSectionView> {
                           buttonTitle: StringConst.BLOG_VIEW_ALL,
                           buttonColor: AppColors.primaryColor,
                           onPressed: () {
-                            openUrlLink(StringConst.MEDIUM_URL);
+                            context.go(Routes.medium);
                           },
                         ),
                       ),
@@ -98,7 +100,7 @@ class _BlogSectionViewState extends State<BlogSectionView> {
                         buttonTitle: StringConst.BLOG_VIEW_ALL,
                         buttonColor: AppColors.primaryColor,
                         onPressed: () {
-                          openUrlLink(StringConst.MEDIUM_URL);
+                          context.go(Routes.medium);
                         },
                       ),
                     ],

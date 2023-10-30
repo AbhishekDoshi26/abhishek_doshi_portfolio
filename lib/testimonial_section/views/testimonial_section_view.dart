@@ -1,10 +1,12 @@
 import 'package:abhishek_doshi_portfolio/header_section/header_section.dart';
+import 'package:abhishek_doshi_portfolio/router/routes.dart';
 import 'package:abhishek_doshi_portfolio/testimonial_section/testimonial_section.dart';
 import 'package:abhishek_doshi_portfolio/utils/utils.dart';
 import 'package:abhishek_doshi_portfolio/values/values.dart';
 import 'package:abhishek_doshi_portfolio/widgets/widgets.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:visibility_detector/visibility_detector.dart';
 
@@ -138,7 +140,7 @@ class _TestimonialSectionViewState extends State<TestimonialSectionView>
         title: 'Check out more!',
         iconData: Icons.arrow_forward_ios,
         onTap: () {
-          openUrlLink(StringConst.LINKED_IN_URL);
+          context.go(Routes.linkedin);
         },
       ),
       child: _buildTestimonials(),

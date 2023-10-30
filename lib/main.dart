@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:abhishek_doshi_portfolio/firebase_options.dart';
-import 'package:abhishek_doshi_portfolio/home/home.dart';
+import 'package:abhishek_doshi_portfolio/router/router.dart';
 import 'package:abhishek_doshi_portfolio/values/values.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -24,7 +24,6 @@ void main() {
         name: 'app_open',
       );
   });
-
   runApp(const MyApp());
 }
 
@@ -34,11 +33,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Layout(
-      child: MaterialApp(
+      child: MaterialApp.router(
         title: StringConst.APP_NAME,
         theme: AppTheme.lightThemeData,
         debugShowCheckedModeBanner: false,
-        home: const HomePage(),
+        routerConfig: router,
       ),
     );
   }

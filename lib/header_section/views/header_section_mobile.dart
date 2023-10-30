@@ -1,9 +1,11 @@
 import 'package:abhishek_doshi_portfolio/header_section/header_section.dart';
+import 'package:abhishek_doshi_portfolio/router/router.dart';
 import 'package:abhishek_doshi_portfolio/utils/utils.dart';
 import 'package:abhishek_doshi_portfolio/values/values.dart';
 import 'package:abhishek_doshi_portfolio/widgets/widgets.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class HeaderSectionMobile extends StatefulWidget {
   const HeaderSectionMobile({Key? key}) : super(key: key);
@@ -161,7 +163,7 @@ class _HeaderSectionMobileState extends State<HeaderSectionMobile>
                                     const SpaceH8(),
                                     SelectableText(StringConst.DEV_EMAIL_2,
                                         style: bodyTextStyle, onTap: () {
-                                      openUrlLink(StringConst.EMAIL_URL);
+                                      context.go(Routes.email);
                                     }),
                                   ],
                                 ),
@@ -178,7 +180,7 @@ class _HeaderSectionMobileState extends State<HeaderSectionMobile>
                                       StringConst.LINKEDIN_URL_SHORT,
                                       style: bodyTextStyle,
                                       onTap: () {
-                                        openUrlLink(StringConst.LINKED_IN_URL);
+                                        context.go(Routes.linkedin);
                                       },
                                     ),
                                   ],

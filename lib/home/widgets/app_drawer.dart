@@ -1,7 +1,9 @@
+import 'package:abhishek_doshi_portfolio/router/router.dart';
 import 'package:abhishek_doshi_portfolio/utils/utils.dart';
 import 'package:abhishek_doshi_portfolio/values/values.dart';
 import 'package:abhishek_doshi_portfolio/widgets/widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../nav_section/models/nav_item.dart';
 
@@ -159,7 +161,7 @@ class _AppDrawerState extends State<AppDrawer> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             InkWell(
-              onTap: () => openUrlLink(StringConst.LINKED_IN_URL),
+              onTap: () => context.go(Routes.linkedin),
               child: RichText(
                 text: TextSpan(
                   text: "${StringConst.BUILT_BY} ",

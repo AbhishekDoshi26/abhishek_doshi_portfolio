@@ -1,8 +1,10 @@
 import 'package:abhishek_doshi_portfolio/footer/footer.dart';
+import 'package:abhishek_doshi_portfolio/router/router.dart';
 import 'package:abhishek_doshi_portfolio/utils/utils.dart';
 import 'package:abhishek_doshi_portfolio/values/values.dart';
 import 'package:abhishek_doshi_portfolio/widgets/widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class FooterSectionView extends StatefulWidget {
@@ -58,7 +60,7 @@ class _FooterSectionViewState extends State<FooterSectionView> {
           ),
           Center(
             child: InkWell(
-              onTap: () => openUrlLink(StringConst.LINKED_IN_URL),
+              onTap: () => context.go(Routes.linkedin),
               child: RichText(
                 text: TextSpan(
                   text: "${StringConst.BUILT_BY} ",
