@@ -202,6 +202,12 @@ class StringConst {
   static const String BLOG_CATEGORY_1 = "flutter";
   static const String BLOG_CATEGORY_2 = "firebase";
 
+  static const String BLOG_TITLE_5 =
+      "Flutter: Seamless Header Navigation from AppBar";
+  static const String BLOG_DATE_5 = "November 12, 2023";
+  static const String BLOG_URL_5 =
+      "https://medium.com/@abhishekdoshi26/flutter-seamless-header-navigation-from-appbar-a796d0180d73";
+
   static const String BLOG_TITLE_4 =
       "Package-based architecture - Let's deliver the packages";
   static const String BLOG_DATE_4 = "August 27, 2023";
