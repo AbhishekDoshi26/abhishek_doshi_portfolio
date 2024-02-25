@@ -78,7 +78,7 @@ class _TestimonialSectionViewState extends State<TestimonialSectionView>
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   _buildTestimonialSectionLg(),
-                  const SpaceH50(),
+                  const Spacer(),
                   ResponsiveBuilder(
                     builder: (context, sizingInformation) {
                       double screenWidth = sizingInformation.screenSize.width;
@@ -228,11 +228,11 @@ class _TestimonialSectionViewState extends State<TestimonialSectionView>
 
   Widget _buildTestimonials() {
     return SizedBox(
-      height: responsiveSize(context, 310, 310),
+      height: responsiveSize(context, 350, 350),
       width: widthOfScreen(context),
       child: CarouselSlider(
         options: CarouselOptions(
-          height: responsiveSize(context, 310, 310),
+          height: responsiveSize(context, 350, 350),
           autoPlay: true,
           viewportFraction: responsiveSize(context, 1, 0.5, md: 1),
         ),
@@ -297,7 +297,8 @@ class _TestimonialSectionViewState extends State<TestimonialSectionView>
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding:
+                        const EdgeInsets.only(top: 8.0, left: 8.0, right: 8.0),
                     child: SelectableText(
                       data[index].name,
                       style: textTheme.bodyLarge?.copyWith(
@@ -306,13 +307,14 @@ class _TestimonialSectionViewState extends State<TestimonialSectionView>
                           Sizes.TEXT_SIZE_14,
                           Sizes.TEXT_SIZE_16,
                         ),
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ),
                   SizedBox(
                     width: responsiveSize(context, 240, 530, md: 450),
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 8.0),
                       child: SelectableText(
                         data[index].position,
                         style: textTheme.bodyLarge?.copyWith(

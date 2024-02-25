@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!-- If you are serving your web app in a path other than the root, change the href value below to reflect the base path you are serving from. -->
   <base href="$FLUTTER_BASE_HREF">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="Explore Abhishek Doshi's impressive portfolio, powered by Flutter. Check out his projects, blog posts, and expertise in web development.">
+  <meta name="description"
+    content="Explore Abhishek Doshi's impressive portfolio, powered by Flutter. Check out his projects, blog posts, and expertise in web development.">
 
   <!-- SEO meta tags -->
   <meta name="keywords" content="Abhishek Doshi, Portfolio, Flutter, Web Development, Projects, Blog">
@@ -17,14 +19,51 @@
 
   <!-- Social media meta tags -->
   <meta property="og:title" content="Abhishek Doshi">
-  <meta property="og:description" content="Explore Abhishek Doshi's impressive portfolio, powered by Flutter. Check out his projects, blog posts, and expertise in web development.">
-  <meta property="og:image" content="https://raw.githubusercontent.com/AbhishekDoshi26/abhishek_doshi_portfolio/main/assets/images/home_page_screenshot.png">
+  <meta property="og:description"
+    content="Explore Abhishek Doshi's impressive portfolio, powered by Flutter. Check out his projects, blog posts, and expertise in web development.">
+  <meta property="og:image"
+    content="https://raw.githubusercontent.com/AbhishekDoshi26/abhishek_doshi_portfolio/main/assets/images/home_page_screenshot.png">
   <meta property="og:url" content="https://abhishekdoshi.dev"> <!-- Update with your website URL -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@AbhishekDoshi26"> <!-- Add your Twitter handle -->
   <meta name="twitter:title" content="Abhishek Doshi's Portfolio">
-  <meta name="twitter:description" content="Explore Abhishek Doshi's impressive portfolio, powered by Flutter. Check out his projects, blog posts, and expertise in web development.">
-  <meta name="twitter:image" content="https://raw.githubusercontent.com/AbhishekDoshi26/abhishek_doshi_portfolio/main/assets/images/home_page_screenshot.png">
+  <meta name="twitter:description"
+    content="Explore Abhishek Doshi's impressive portfolio, powered by Flutter. Check out his projects, blog posts, and expertise in web development.">
+  <meta name="twitter:image"
+    content="https://raw.githubusercontent.com/AbhishekDoshi26/abhishek_doshi_portfolio/main/assets/images/home_page_screenshot.png">
+  
+    <!-- LinkedIn Card -->
+  <meta property="linkedin:title" content="Abhishek Doshi">
+  <meta property="linkedin:description"
+    content="Explore Abhishek Doshi's impressive portfolio, powered by Flutter. Check out his projects, blog posts, and expertise in web development.">
+  <meta property="linkedin:image" content="https://raw.githubusercontent.com/AbhishekDoshi26/abhishek_doshi_portfolio/main/assets/images/home_page_screenshot.png?v=2">
+  <meta property="linkedin:url" content="https://abhishekdoshi.dev">
+
+  <!-- Facebook Card -->
+  <meta property="facebook:card" content="summary_large_image">
+  <meta property="facebook:title" content="Abhishek Doshi">
+  <meta property="facebook:description"
+    content="Explore Abhishek Doshi's impressive portfolio, powered by Flutter. Check out his projects, blog posts, and expertise in web development.">
+  <meta property="facebook:image" content="https://raw.githubusercontent.com/AbhishekDoshi26/abhishek_doshi_portfolio/main/assets/images/home_page_screenshot.png?v=2">
+  <meta property="facebook:url" content="https://abhishekdoshi.dev">
+
+  <!-- WhatsApp Card -->
+  <meta property="whatsapp:title" content="Abhishek Doshi">
+  <meta property="whatsapp:description"
+    content="Explore Abhishek Doshi's impressive portfolio, powered by Flutter. Check out his projects, blog posts, and expertise in web development.">
+  <meta property="whatsapp:image" content="https://raw.githubusercontent.com/AbhishekDoshi26/abhishek_doshi_portfolio/main/assets/images/home_page_screenshot.png?v=2">
+  <meta property="whatsapp:url" content="https://abhishekdoshi.dev">
+
+  <!-- Instagram Card -->
+  <meta property="instagram:title" content="Abhishek Doshi">
+  <meta property="instagram:description"
+    content="Explore Abhishek Doshi's impressive portfolio, powered by Flutter. Check out his projects, blog posts, and expertise in web development.">
+  <meta property="instagram:image" content="https://raw.githubusercontent.com/AbhishekDoshi26/abhishek_doshi_portfolio/main/assets/images/home_page_screenshot.png?v=2">
+  <meta property="instagram:url" content="https://abhishekdoshi.dev">
+
+  <!-- SEO Tags -->
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -33,7 +72,7 @@
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="icon" type="image/png" href="favicon.png" />
 
   <title>Abhishek Doshi</title>
   <link rel="manifest" href="manifest.json">
@@ -45,16 +84,17 @@
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
 </head>
+
 <body>
-  <script>
-    window.addEventListener('load', function(ev) {
+  <script defer>
+    window.addEventListener('load', function (ev) {
       // Download main.dart.js
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
         },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
+        onEntrypointLoaded: function (engineInitializer) {
+          engineInitializer.initializeEngine().then(function (appRunner) {
             appRunner.runApp();
           });
         }
@@ -62,4 +102,5 @@
     });
   </script>
 </body>
+
 </html>
