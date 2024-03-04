@@ -25,7 +25,7 @@ class StringConst {
   static const String INTRO = "Hi! I'm Abhishek Doshi -";
   static const String POSITION = "Flutter Developer";
   static const String ABOUT_DEV =
-      "Google Developer Expert for Dart, Flutter & Firebase. Working in Flutter and Firebase from past 5 years. With deep experience in Flutter & Firebase, let's give your idea a life. Community Leader & Content Creator.";
+      "Google Developer Expert for Dart, Flutter & Firebase. Working in Flutter and Firebase from past 6 years. With deep experience in Flutter & Firebase, let's give your idea a life. Community Leader & Content Creator.";
   static const String DOWNLOAD_CV = "Download CV";
   static const String EMAIL = "Email";
   static const String CALENDLY = "Calendly";
@@ -53,7 +53,7 @@ class StringConst {
   static const String THERE = "There!";
   static const String ABOUT_ME = "about me";
   static const String ABOUT_ME_DESC =
-      "Flutter Developer and GDE for Dart, Flutter & Firebase working in app development field for 5 years so far, specialized in app and website development with Flutter. With vast and deep experience of Flutter, I curate your app and give it a soul. Let's give your idea a life.";
+      "Flutter Developer and GDE for Dart, Flutter & Firebase working in app development field for 6 years so far, specialized in app and website development with Flutter. With vast and deep experience of Flutter, I curate your app and give it a soul. Let's give your idea a life.";
   static const String ABOUT_ME_HEADER = "Have an app idea?";
   static const String HELP = "Let's get it done!";
   static const String FOLLOW_ME_1 = "You can also follow me here:";
@@ -67,7 +67,7 @@ class StringConst {
 
   static const String SKILLS_1 = "Flutter";
   static const String SKILLS_1_DESC =
-      "Let's make your app live in the world. With 5+ years of experience in Flutter, delivering best apps for you.";
+      "Let's make your app live in the world. With 6+ years of experience in Flutter, delivering best apps for you.";
   static const String SKILLS_2 = "Firebase";
   static const String SKILLS_2_DESC =
       "Got no database knowlegde? No worries, Firebase is your friend.";
@@ -82,7 +82,7 @@ class StringConst {
   static const String HAPPY_CLIENTS = "Happy Clients";
   static const String HAPPY_CLIENTS_NUM = "12";
   static const String YEARS_OF_EXPERIENCE = "Years of Experience";
-  static const String YEARS_OF_EXPERIENCE_NUM = "5";
+  static const String YEARS_OF_EXPERIENCE_NUM = "6";
   static const String INCREDIBLE_PROJECTS = "Incredible Projects";
   static const String INCREDIBLE_PROJECTS_NUM = "62";
 
