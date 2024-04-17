@@ -4,12 +4,12 @@ import 'package:url_launcher/link.dart';
 
 class LinkButton extends StatelessWidget {
   const LinkButton({
-    Key? key,
+    super.key,
     required this.url,
     required this.child,
     this.linkTarget = LinkTarget.blank,
     this.builder,
-  }) : super(key: key);
+  });
 
   final String url;
   final Widget child;

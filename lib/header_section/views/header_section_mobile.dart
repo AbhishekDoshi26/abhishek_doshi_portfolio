@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 class HeaderSectionMobile extends StatefulWidget {
-  const HeaderSectionMobile({Key? key}) : super(key: key);
+  const HeaderSectionMobile({super.key});
 
   @override
   State<HeaderSectionMobile> createState() => _HeaderSectionMobileState();

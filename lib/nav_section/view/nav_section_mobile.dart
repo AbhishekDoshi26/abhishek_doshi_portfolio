@@ -11,7 +11,7 @@ class NavSectionMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: Sizes.HEIGHT_100,
+      height: Sizes.HEIGHT_74,
       decoration: const BoxDecoration(
         color: AppColors.black100,
       ),

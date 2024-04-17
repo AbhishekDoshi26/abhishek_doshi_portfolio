@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 
 class HeaderImage extends StatefulWidget {
   const HeaderImage({
-    Key? key,
+    super.key,
     required this.controller,
     this.globeSize = 150,
     this.imageHeight,
     this.imageWidth,
     this.fit,
-  }) : super(key: key);
+  });
 
   final double? globeSize;
   final double? imageWidth;

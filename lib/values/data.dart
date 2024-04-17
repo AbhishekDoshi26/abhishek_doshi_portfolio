@@ -1,4 +1,4 @@
-part of values;
+part of 'values.dart';
 
 class Data {
   static List<SocialButtonData> socialData = [
@@ -218,6 +218,12 @@ class Data {
       position: StringConst.TESTIMONIALS_15_POSITION,
       testimonial: StringConst.TESTIMONIALS_15,
       image: StringConst.TESTIMONIALS_15_URL,
+    ),
+    TestimonialSectionModel(
+      name: StringConst.TESTIMONIALS_16_NAME,
+      position: StringConst.TESTIMONIALS_16_POSITION,
+      testimonial: StringConst.TESTIMONIALS_16,
+      image: StringConst.TESTIMONIALS_16_URL,
     ),
   ];
 

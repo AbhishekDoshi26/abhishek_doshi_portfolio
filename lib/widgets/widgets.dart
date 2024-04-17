@@ -6,6 +6,7 @@ export 'content_area.dart';
 export 'empty.dart';
 export 'info_section.dart';
 export 'link_button.dart';
+export 'scroll_behaviour.dart';
 export 'selected_indicator.dart';
 export 'spaces.dart';
 export 'vertical_divider.dart';

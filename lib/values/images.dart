@@ -1,4 +1,4 @@
-part of values;
+part of 'values.dart';
 
 class ImagePath {
   //images route

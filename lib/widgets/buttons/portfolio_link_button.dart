@@ -7,7 +7,7 @@ import 'portfolio_button.dart';
 
 class PortfolioLinkButton extends StatelessWidget {
   const PortfolioLinkButton({
-    Key? key,
+    super.key,
     required this.buttonTitle,
     required this.url,
     this.linkTarget = LinkTarget.blank,
@@ -15,7 +15,7 @@ class PortfolioLinkButton extends StatelessWidget {
     this.builder,
     this.width = Sizes.WIDTH_150,
     this.height = Sizes.HEIGHT_60,
-  }) : super(key: key);
+  });
 
   final String url;
   final String buttonTitle;

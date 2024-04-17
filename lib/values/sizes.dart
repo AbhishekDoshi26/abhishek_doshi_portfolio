@@ -1,4 +1,4 @@
-part of values;
+part of 'values.dart';
 
 class Sizes {
   static const double kDivisions = 15.0;

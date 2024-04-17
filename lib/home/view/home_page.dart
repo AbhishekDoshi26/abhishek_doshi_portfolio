@@ -129,90 +129,93 @@ class _HomeBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      child: SingleChildScrollView(
-        controller: _scrollController,
-        child: Column(
-          children: [
-            Stack(
-              children: [
-                Positioned.fill(
-                  child: Align(
-                    alignment: Alignment.center,
-                    child: Image.asset(ImagePath.kBlobBeanAsh),
+      child: ScrollConfiguration(
+        behavior: SmoothScrollBehavior(),
+        child: SingleChildScrollView(
+          controller: _scrollController,
+          child: Column(
+            children: [
+              Stack(
+                children: [
+                  Positioned.fill(
+                    child: Align(
+                      alignment: Alignment.center,
+                      child: Image.asset(ImagePath.kBlobBeanAsh),
+                    ),
                   ),
-                ),
-                Column(
-                  children: [
-                    HeaderSectionView(
-                      key: Data.navItems[0].key,
-                    ),
-                    SizedBox(height: spacerHeight),
-                    VisibilityDetector(
-                      key: const Key("about"),
-                      onVisibilityChanged: (visibilityInfo) {
-                        double visiblePercentage =
-                            visibilityInfo.visibleFraction * 100;
-                        if (visiblePercentage > 10) {
-                          _controller.forward();
-                        }
-                      },
-                      child: Container(
-                        key: Data.navItems[1].key,
-                        child: const AboutMeSectionView(),
+                  Column(
+                    children: [
+                      HeaderSectionView(
+                        key: Data.navItems[0].key,
                       ),
-                    ),
-                  ],
-                )
-              ],
-            ),
-            SizedBox(height: spacerHeight),
-            Stack(
-              children: [
-                Positioned(
-                  top: assignWidth(context, 0.1),
-                  left: -assignWidth(context, 0.05),
-                  child: Image.asset(ImagePath.kBlobFemurAsh),
-                ),
-                Positioned(
-                  right: -assignWidth(context, 0.5),
-                  child: Image.asset(ImagePath.kBlobSmallBeanAsh),
-                ),
-                Column(
-                  children: [
-                    Container(
-                      key: Data.navItems[2].key,
-                      child: const SkillsSectionView(),
-                    ),
-                    SizedBox(height: spacerHeight),
-                    const StatisticsSectionView(),
-                  ],
-                ),
-              ],
-            ),
-            SizedBox(height: spacerHeight),
-            Stack(
-              children: [
-                Positioned(
-                  left: -assignWidth(context, 0.6),
-                  child: Image.asset(ImagePath.kBlobAsh),
-                ),
-                Column(
-                  children: [
-                    Container(
-                      key: Data.navItems[3].key,
-                      child: const TestimonialSectionView(),
-                    ),
-                    const SpaceH40(),
-                    Container(
-                      key: Data.navItems[4].key,
-                      child: const BlogSectionView(),
-                    ),
-                    const FooterSectionView(),
-                  ],
-                )
-              ],
-            ),
-          ],
+                      SizedBox(height: spacerHeight),
+                      VisibilityDetector(
+                        key: const Key("about"),
+                        onVisibilityChanged: (visibilityInfo) {
+                          double visiblePercentage =
+                              visibilityInfo.visibleFraction * 100;
+                          if (visiblePercentage > 10) {
+                            _controller.forward();
+                          }
+                        },
+                        child: Container(
+                          key: Data.navItems[1].key,
+                          child: const AboutMeSectionView(),
+                        ),
+                      ),
+                    ],
+                  )
+                ],
+              ),
+              SizedBox(height: spacerHeight),
+              Stack(
+                children: [
+                  Positioned(
+                    top: assignWidth(context, 0.1),
+                    left: -assignWidth(context, 0.05),
+                    child: Image.asset(ImagePath.kBlobFemurAsh),
+                  ),
+                  Positioned(
+                    right: -assignWidth(context, 0.5),
+                    child: Image.asset(ImagePath.kBlobSmallBeanAsh),
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                        key: Data.navItems[2].key,
+                        child: const SkillsSectionView(),
+                      ),
+                      SizedBox(height: spacerHeight),
+                      const StatisticsSectionView(),
+                    ],
+                  ),
+                ],
+              ),
+              SizedBox(height: spacerHeight),
+              Stack(
+                children: [
+                  Positioned(
+                    left: -assignWidth(context, 0.6),
+                    child: Image.asset(ImagePath.kBlobAsh),
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                        key: Data.navItems[3].key,
+                        child: const TestimonialSectionView(),
+                      ),
+                      const SpaceH40(),
+                      Container(
+                        key: Data.navItems[4].key,
+                        child: const BlogSectionView(),
+                      ),
+                      const FooterSectionView(),
+                    ],
+                  )
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class HeaderSectionView extends StatelessWidget {
-  const HeaderSectionView({Key? key}) : super(key: key);
+  const HeaderSectionView({super.key});
 
   @override
   Widget build(BuildContext context) {
