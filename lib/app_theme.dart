@@ -14,8 +14,8 @@ class AppTheme {
     return ThemeData(
         textTheme: _textTheme,
         iconTheme: const IconThemeData(color: AppColors.white),
-        canvasColor: colorScheme.background,
-        scaffoldBackgroundColor: colorScheme.background,
+        canvasColor: colorScheme.surface,
+        scaffoldBackgroundColor: colorScheme.surface,
         highlightColor: Colors.transparent,
         visualDensity: VisualDensity.adaptivePlatformDensity,
         focusColor: AppColors.primaryColor,
@@ -29,9 +29,7 @@ class AppTheme {
   static const ColorScheme lightColorScheme = ColorScheme(
     primary: AppColors.primaryColor,
     secondary: AppColors.primaryColor,
-    background: Colors.white,
     surface: Color(0xFFFAFBFB),
-    onBackground: AppColors.primaryColor,
     error: _lightFillColor,
     onError: _lightFillColor,
     onPrimary: _lightFillColor,
