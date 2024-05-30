@@ -51,7 +51,7 @@ flutter run
 
 4. To deploy, run the following command:
 ```
-flutter build web --web-renderer canvaskit; firebase deploy
+flutter build web --wasm; firebase deploy
 ```
 
 
