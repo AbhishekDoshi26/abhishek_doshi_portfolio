@@ -212,6 +212,13 @@ class StringConst {
   static const String TESTIMONIALS_16_URL =
       "https://firebasestorage.googleapis.com/v0/b/abhishek-doshi-portfolio.appspot.com/o/ChipWhitmer.jpeg?alt=media&token=0d86a29e-c7d2-4f46-b940-60c808373c21";
 
+  static const String TESTIMONIALS_17_NAME = "Krish Krithivasan";
+  static const String TESTIMONIALS_17_POSITION = "Chief Technology Officer";
+  static const String TESTIMONIALS_17 =
+      "Abhishek works with me on developing a critical business application for my company using Flutter. He is very responsive and knowledgeable. His code is mature and professionally written / organized. It allows us to have a sustainable code base that we should be able to enhance with time.\n\nIn his work, he has mentored and guided a new developer and delegated effectively. His ways of working are well suited to getting work done with a distributed work force and he has the makings of a good team leader.\n\nI would happily recommend him to others and look forward to continuing to work with him. ";
+  static const String TESTIMONIALS_17_URL =
+      "https://firebasestorage.googleapis.com/v0/b/abhishek-doshi-portfolio.appspot.com/o/krish.jpeg?alt=media&token=4ebc7ef4-2d2e-4ea8-a6d5-2be0ca8e434c";
+
   //Blog Section
   static const String MY_BLOG = "my blog";
   static const String BLOG_SECTION_TITLE_1 = "Some Recent Blogs";
