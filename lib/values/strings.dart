@@ -230,6 +230,12 @@ class StringConst {
   static const String BLOG_CATEGORY_1 = "flutter";
   static const String BLOG_CATEGORY_2 = "firebase";
 
+  static const String BLOG_TITLE_7 =
+      "WASM + Flutter Web — Let’s understand it!";
+  static const String BLOG_DATE_7 = "June 14, 2024";
+  static const String BLOG_URL_7 =
+      "https://medium.com/@abhishekdoshi26/wasm-650ca52f04df";
+
   static const String BLOG_TITLE_6 =
       "The One Trick Every Flutter Web Dev Needs to Know";
   static const String BLOG_DATE_6 = "February 21, 2024";

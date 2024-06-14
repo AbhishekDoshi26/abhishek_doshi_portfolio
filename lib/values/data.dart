@@ -236,6 +236,14 @@ class Data {
   static List<BlogCardData> blogData = [
     BlogCardData(
       category: StringConst.BLOG_CATEGORY_1,
+      title: StringConst.BLOG_TITLE_7,
+      date: StringConst.BLOG_DATE_7,
+      buttonText: StringConst.READ_MORE,
+      imageUrl: ImagePath.kBlog07,
+      url: StringConst.BLOG_URL_7,
+    ),
+    BlogCardData(
+      category: StringConst.BLOG_CATEGORY_1,
       title: StringConst.BLOG_TITLE_6,
       date: StringConst.BLOG_DATE_6,
       buttonText: StringConst.READ_MORE,

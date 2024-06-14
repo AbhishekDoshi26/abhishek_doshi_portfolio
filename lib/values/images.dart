@@ -45,4 +45,6 @@ class ImagePath {
 
   static const String kBlog06 =
       "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*aEO3narhR66G1dl_-h56Ug.png";
+  static const String kBlog07 =
+      "https://cdn-images-1.medium.com/v2/resize:fit:1600/1*jtbJQ9lNn5Gcfq4QsPxS9w.png";
 }
