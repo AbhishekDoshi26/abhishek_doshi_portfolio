@@ -232,7 +232,7 @@ class StringConst {
 
   static const String BLOG_TITLE_7 =
       "WASM + Flutter Web — Let’s understand it!";
-  static const String BLOG_DATE_7 = "June 14, 2024";
+  static const String BLOG_DATE_7 = "June 15, 2024";
   static const String BLOG_URL_7 =
       "https://medium.com/@abhishekdoshi26/wasm-650ca52f04df";
 
