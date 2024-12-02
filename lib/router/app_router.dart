@@ -82,6 +82,26 @@ final router = GoRouter(
         return Routes.home;
       },
     ),
+    GoRoute(
+      path: Routes.wasm,
+      redirect: (context, state) async {
+        await _launchUrl(
+          Uri.parse(StringConst.wasmBlog),
+          isNewTab: false,
+        );
+        return Routes.home;
+      },
+    ),
+    GoRoute(
+      path: Routes.wasmExample,
+      redirect: (context, state) async {
+        await _launchUrl(
+          Uri.parse(StringConst.wasmExample),
+          isNewTab: false,
+        );
+        return Routes.home;
+      },
+    ),
   ],
 );
 

@@ -17,7 +17,8 @@ class BlogSectionView extends StatefulWidget {
 class _BlogSectionViewState extends State<BlogSectionView> {
   final int blogLength = Data.blogData.length;
   int currentPageIndex = 1;
-  final CarouselController _carouselController = CarouselController();
+  final CarouselSliderController _carouselController =
+      CarouselSliderController();
 
   @override
   Widget build(BuildContext context) {

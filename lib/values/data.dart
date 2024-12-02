@@ -231,6 +231,12 @@ class Data {
       testimonial: StringConst.TESTIMONIALS_17,
       image: StringConst.TESTIMONIALS_17_URL,
     ),
+    TestimonialSectionModel(
+      name: StringConst.TESTIMONIALS_18_NAME,
+      position: StringConst.TESTIMONIALS_18_POSITION,
+      testimonial: StringConst.TESTIMONIALS_18,
+      image: StringConst.TESTIMONIALS_18_URL,
+    ),
   ];
 
   static List<BlogCardData> blogData = [

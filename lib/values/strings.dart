@@ -219,6 +219,13 @@ class StringConst {
   static const String TESTIMONIALS_17_URL =
       "https://firebasestorage.googleapis.com/v0/b/abhishek-doshi-portfolio.appspot.com/o/krish.jpeg?alt=media&token=4ebc7ef4-2d2e-4ea8-a6d5-2be0ca8e434c";
 
+  static const String TESTIMONIALS_18_NAME = "Jahid Hasan";
+  static const String TESTIMONIALS_18_POSITION = "Mobile Developer - Sakan";
+  static const String TESTIMONIALS_18 =
+      "I had the pleasure of working with Abhishek Doshi on the Sakan mobile app project, and I am consistently impressed by his exceptional skills as a developer. Abhishek demonstrated a deep understanding of flutter, contributing significantly to the project's success with his technical expertise and problem-solving abilities. His attention to detail, ability to meet tight deadlines, and collaborative approach made him a valuable asset to our team. Abhishek’s dedication and professionalism set him apart, and I highly recommend him for any development role.";
+  static const String TESTIMONIALS_18_URL =
+      "https://firebasestorage.googleapis.com/v0/b/abhishek-doshi-portfolio.appspot.com/o/jahid.jpeg?alt=media&token=f9db12fb-40df-4887-a56b-9dc0d99a6c98";
+
   //Blog Section
   static const String MY_BLOG = "my blog";
   static const String BLOG_SECTION_TITLE_1 = "Some Recent Blogs";
@@ -296,4 +303,8 @@ class StringConst {
   static const String MEDIUM_URL = "https://abhishekdoshi26.medium.com/";
   static const String CV_URL =
       "https://drive.google.com/file/d/1ZcpXka01BQz6Rd1cyQtV9SqcegH5hh3l/view?usp=sharing";
+  static const String wasmBlog =
+      "https://medium.com/google-developer-experts/wasm-650ca52f04df";
+  static const String wasmExample =
+      "https://github.com/abhishekDoshi26/wasm_example";
 }

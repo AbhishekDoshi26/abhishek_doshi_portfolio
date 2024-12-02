@@ -7,4 +7,6 @@ class Routes {
   static String medium = '/medium';
   static String cv = '/cv';
   static String email = '/email';
+  static String wasm = '/wasm';
+  static String wasmExample = '/wasm-example';
 }

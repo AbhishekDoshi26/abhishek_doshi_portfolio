@@ -1,15 +1,15 @@
 name: abhishek_doshi_portfolio
 description: Abhishek Doshi portfolio website.
 
-publish_to: 'none'
+publish_to: "none"
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.0.6 <4.0.0'
+  sdk: ">=3.0.6 <4.0.0"
 
 dependencies:
   animated_text_kit: ^4.2.1
-  carousel_slider: ^4.2.1
+  carousel_slider: ^5.0.0
   cupertino_icons: ^1.0.2
   dots_indicator: ^3.0.0
   feather_icons: ^1.1.0-nullsafety.0
