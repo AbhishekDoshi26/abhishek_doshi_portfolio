@@ -6,6 +6,8 @@ import 'package:abhishek_doshi_portfolio/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import 'package:url_launcher/link.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class FooterSectionView extends StatefulWidget {
   const FooterSectionView({super.key});
@@ -54,6 +56,18 @@ class _FooterSectionViewState extends State<FooterSectionView> {
             },
           ),
           const SpaceH20(),
+          const SpaceH4(),
+          Link(
+            uri: Uri.parse(StringConst.refrens),
+            builder: (context, followLink) {
+              return InkWell(
+                onTap: () {
+                  launchUrl(Uri.parse(StringConst.refrens));
+                },
+                child: Image.asset(ImagePath.kRefrens, height: 50),
+              );
+            },
+          ),
           Text(
             StringConst.RIGHTS_RESERVED,
             style: footerTextStyle,

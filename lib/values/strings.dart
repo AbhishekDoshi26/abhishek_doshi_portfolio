@@ -307,4 +307,6 @@ class StringConst {
       "https://medium.com/google-developer-experts/wasm-650ca52f04df";
   static const String wasmExample =
       "https://github.com/abhishekDoshi26/wasm_example";
+  static const String refrens =
+      "https://www.refrens.com/free-online-invoicing-software";
 }

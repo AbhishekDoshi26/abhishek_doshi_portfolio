@@ -8,6 +8,7 @@ class ImagePath {
   // Logo
   static const String kLogoDark = "$kImageDir/logo_dark.png";
   static const String kLogoLight = "$kImageDir/logo_light.png";
+  static const String kRefrens = "$kImageDir/refrens.png";
 
   // Blobs
   static const String kBlobAsh = "$kImageDir/blob_ash.png";

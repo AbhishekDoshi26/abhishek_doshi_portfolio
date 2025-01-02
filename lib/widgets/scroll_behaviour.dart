@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class SmoothScrollBehavior extends ScrollBehavior {
@@ -9,4 +11,12 @@ class SmoothScrollBehavior extends ScrollBehavior {
         .applyTo(const BouncingScrollPhysics())
         .applyTo(const AlwaysScrollableScrollPhysics());
   }
+
+  @override
+  Set<PointerDeviceKind> get dragDevices => {
+        PointerDeviceKind.touch,
+        PointerDeviceKind.stylus,
+        PointerDeviceKind.invertedStylus,
+        PointerDeviceKind.trackpad,
+      };
 }
